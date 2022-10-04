@@ -1,3 +1,133 @@
+.input_field {
+  /* box-shadow: 2px 2px 2px 2px gray; */
+  margin: 10px 0px 10px 0px;
+
+}
+
+.input_container {
+  margin: 10px;
+}
+
+.vendorText {
+  color: rgba(4, 134, 117, 0.815);
+}
+
+.hr {
+  height: 2px;
+  background-color: rgb(70, 65, 65);
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+
+.GENERATE_NUMBER_Div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.GENERATE_NUMBER_button {
+  margin-left: 5px;
+
+}
+
+.OPENING_BALANCE_BUTTON {
+  color: black;
+  margin-bottom: 5px;
+  background-color: rgba(184, 236, 229, 0.815);
+}
+
+.REGISTER_VENDOR_BUTTON {
+  background-color: rgba(4, 134, 117, 0.815);
+}
+
+.item_first_row {
+  background-color: rgb(245, 240, 240);
+  border-radius: 5px;
+  padding: 5px 3px 10px 3px;
+}
+
+.first_row_under_item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.date_input {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.date_input input {
+  border: none;
+}
+
+.ADD_button {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.table {
+  background-color: rgb(245, 240, 240);
+  border-top: 2px solid black;
+  border-left:  2px solid black;
+  border-right:  2px solid black;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 5px;
+  font-weight: bold;
+}
+.discount{
+  display: grid;
+  margin-bottom: 10px;
+
+  grid-template-columns: repeat(2,1fr);
+}
+.VAT_TAX{
+  display: flex;
+  align-items: center;
+
+}
+.Gross{
+  font-weight: 400;
+}
+.Previous_Due{
+  font-weight: bold;
+  color: rgb(236, 107, 107);
+}
+.Adjustable_Due{
+  font-weight: bold;
+  color: rgb(90, 214, 90);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
   padding: 0 2rem;
 }
@@ -116,13 +246,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
