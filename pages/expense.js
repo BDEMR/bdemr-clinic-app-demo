@@ -1,13 +1,14 @@
 import { Button, FormControl, InputLabel, MenuItem, TextField } from '@mui/material';
 import styles from "../styles/Home.module.css";
 import Select from '@mui/material/Select';
-// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-// import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { Search } from '@mui/icons-material';
+import { useState } from 'react';
 
 
 const expense = () => {
-
+    // const [search,setSearch]= useState('')
+    
+   
     return (
         <div className={styles.input_container}>
             <section >
@@ -38,46 +39,26 @@ const expense = () => {
                 <div className={styles.item_first_row}>
                     {/* first row  */}
                     <div className={styles.first_row_under_item}>
-                        <div>  <small>|</small> </div>
-                        <div> <small>|</small></div>
+                        <div>  <small>Item Name</small> </div>
+                        <div> <small>Category</small></div>
                         <div><small>| Qty</small></div>
                         <div> <small>| Buying Price</small></div>
                         <div> <small>| selling price </small></div>
                     </div>
 
                     {/* second row  */}
-                    <div className={styles.first_row_under_item}>
+                    <div className={styles.second_row_under_item}>
                         <div >
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">Search Item</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    label="Search Item"
-                                >
-                                    <MenuItem value={10}>Teacher</MenuItem>
-                                    <MenuItem value={20}>Student</MenuItem>
-                                    <MenuItem value={30}>Doctor</MenuItem>
-                                </Select>
-                            </FormControl>
+                        <TextField variant="filled"  fullWidth 
+                        value={item.itemName}
+                        id="fullWidth" />
                         </div>
                         <div>
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">Search Item</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    label="Search Item"
-                                >
-                                    <MenuItem value={10}>Teacher</MenuItem>
-                                    <MenuItem value={20}>Student</MenuItem>
-                                    <MenuItem value={30}>Doctor</MenuItem>
-                                </Select>
-                            </FormControl>
+                        <TextField variant="filled"  fullWidth label="Category" id="fullWidth" /> 
                         </div>
-                        <div><TextField fullWidth label="1" id="fullWidth" /></div>
-                        <div><TextField fullWidth id="fullWidth" /></div>
-                        <div><TextField fullWidth label="0" id="fullWidth" /></div>
+                        <div><TextField fullWidth label="1" id="fullWidth" variant="filled" /></div>
+                        <div><TextField fullWidth id="fullWidth" variant="filled"/></div>
+                        <div><TextField fullWidth label="0" variant="filled" id="fullWidth" /></div>
                     </div>
 
                 </div>
@@ -148,6 +129,7 @@ const expense = () => {
                     <div className={styles.date_input}><label htmlFor="Select" >Select Date</label> <input  type="date" name="Select" id="Select" /></div>
                 </div>
             </section>
+            
 
         </div>
     );
