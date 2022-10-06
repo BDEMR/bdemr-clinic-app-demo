@@ -50,6 +50,11 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+.second_row_under_item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+}
 
 .date_input {
   display: flex;
