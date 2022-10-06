@@ -35,7 +35,8 @@ export default function Home() {
               <h2>Sell &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/page-expense-invoice"}>
+          {/* <Link href={"/page-expense-invoice"}> */}
+          <Link href={"/expense"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Expense &rarr;</h2>
             </a>
