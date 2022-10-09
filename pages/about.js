@@ -21,6 +21,25 @@ const About = () => {
       setData(jsonData?.data.find((item) => item._id === pid));
     }
   }, [pid]);
+  console.log(data);
+  function getDate(date) {
+    var dob = new Date(date);
+    //calculate month difference from current date in time
+    var month_diff = Date.now() - dob.getTime();
+
+    //convert the calculated difference in date format
+    var age_dt = new Date(month_diff);
+
+    //extract year from date
+    var year = age_dt.getUTCFullYear();
+
+    //now calculate the age of the user
+    var age = Math.abs(year - 1970);
+    if (!age) {
+      return "";
+    }
+    return age;
+  }
 
   return (
     <Container maxWidth="lg">
@@ -34,38 +53,81 @@ const About = () => {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          Single Data
+          BDEMR
         </Typography>
-        <Box maxWidth="sm">
+        <Box>
           <TableContainer component={Paper}>
-            <Table aria-label="simple table">
+            <Table sx={{ minWidth: 700 }} aria-label="spanning table">
               <TableHead>
                 <TableRow>
-                  <TableCell>Date</TableCell>
-                  <TableCell align="right">#Invoice</TableCell>
-                  <TableCell align="right">Discount By</TableCell>
-                  <TableCell align="right">Discount Found Name</TableCell>
-                  <TableCell align="right">Fund Discount</TableCell>
-                  <TableCell align="right">Recieved</TableCell>
-                  <TableCell align="right">Total </TableCell>
-                  <TableCell align="right"></TableCell>
+                  <TableCell colSpan={3}>BDEMR</TableCell>
+                  <TableCell align="right">Desc</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
-                <TableRow
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {new Date(data?.createdDatetimeStamp).toLocaleString()}
+                <TableRow>
+                  <TableCell
+                    sx={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <Box>
+                      <Typography>PID: {data?.serial}</Typography>
+                      <Typography>
+                        Patient's Name: {data?.patientName}
+                      </Typography>
+                      <Typography>Phone: {data?.patientPhone}</Typography>
+                      <Typography>
+                        Gender: {data?.patientInfo?.gender}
+                      </Typography>
+                      <Typography>
+                        Age: {getDate(data?.patientInfo?.patientInfo)}
+                      </Typography>
+                    </Box>
                   </TableCell>
-                  <TableCell align="right">{data?.invoiceType}</TableCell>
-                  <TableCell align="right">{data?.discountBy}</TableCell>
-                  <TableCell align="right">{data?.discount}</TableCell>
-                  <TableCell align="right">{data?.organizationName}</TableCell>
+
+                  <TableCell align="right"></TableCell>
+                  <TableCell align="right"></TableCell>
                   <TableCell align="right">
-                    {data?.totalAmountReceieved}
+                    <Box>
+                      <Typography>Age: {data?.referenceNumber}</Typography>
+                      <Typography>
+                        Date:
+                        {new Date(
+                          data?.createdDatetimeStamp
+                        ).toLocaleDateString()}
+                      </Typography>
+                    </Box>
                   </TableCell>
-                  <TableCell align="right">{data?.totalBilled}</TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell rowSpan={3} />
+                  <TableCell colSpan={2}></TableCell>
+                  <TableCell align="right">
+                    <Typography sx={{ fontWeight: "bold" }}>
+                      Total Billed:{data?.totalBilled} BDT
+                    </Typography>
+                    <Typography align="right">
+                      Vat Tax:{data?.vatOrTax}
+                    </Typography>
+                    <Typography align="right">
+                      Total Discount:{data?.discount} BDT
+                    </Typography>
+                    <Typography align="right" sx={{ fontWeight: "bold" }}>
+                      Grand Total:{data?.totalBilled - data?.discount} BDT
+                    </Typography>
+                    <Typography align="right" sx={{ fontWeight: "bold" }}>
+                      Total Paid:{data?.totalAmountReceieved} BDT
+                    </Typography>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  {/* <TableCell>Tax</TableCell>
+                  <TableCell align="right">TAX_RATE * 100</TableCell>
+                  <TableCell align="right">invoiceTaxes</TableCell> */}
+                </TableRow>
+                <TableRow>
+                  {/* <TableCell colSpan={2}>Total</TableCell>
+                  <TableCell align="right">invoiceTotal</TableCell> */}
                 </TableRow>
               </TableBody>
             </Table>
@@ -76,4 +138,5 @@ const About = () => {
   );
 };
 
+ 
 export default About;
