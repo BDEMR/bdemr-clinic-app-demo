@@ -16,8 +16,8 @@ import Grids from "../components/Grids";
 import jsonData from "../data.json";
 import DateRangePicker from "@wojtekmaj/react-daterange-picker/dist/entry.nostyle";
 export default function BasicButtons() {
-  const [discount, setDiscount] = React.useState();
-  const [discountBy, setDiscountBy] = React.useState();
+  const [discount, setDiscount] = React.useState("");
+  const [discountBy, setDiscountBy] = React.useState("");
   const [value, setValue] = React.useState([null, null]);
   const [data, setData] = React.useState(jsonData.data);
 
@@ -97,7 +97,7 @@ export default function BasicButtons() {
         </Button>
       </Stack>
       <Box sx={{ my: 2 }}>
-      {!discount && !discountBy ? <Box></Box> : <Grids data={data} />}
+        <Grids data={data} />
       </Box>
     </Container>
   );

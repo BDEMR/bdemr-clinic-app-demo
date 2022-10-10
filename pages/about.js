@@ -21,7 +21,7 @@ const About = () => {
       setData(jsonData?.data.find((item) => item._id === pid));
     }
   }, [pid]);
-  console.log(data);
+  //console.log(data);
   function getDate(date) {
     var dob = new Date(date);
     //calculate month difference from current date in time
@@ -72,7 +72,7 @@ const About = () => {
                     <Box>
                       <Typography>PID: {data?.serial}</Typography>
                       <Typography>
-                        Patient's Name: {data?.patientName}
+                        Patients Name: {data?.patientName}
                       </Typography>
                       <Typography>Phone: {data?.patientPhone}</Typography>
                       <Typography>
@@ -121,13 +121,8 @@ const About = () => {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  {/* <TableCell>Tax</TableCell>
-                  <TableCell align="right">TAX_RATE * 100</TableCell>
-                  <TableCell align="right">invoiceTaxes</TableCell> */}
                 </TableRow>
                 <TableRow>
-                  {/* <TableCell colSpan={2}>Total</TableCell>
-                  <TableCell align="right">invoiceTotal</TableCell> */}
                 </TableRow>
               </TableBody>
             </Table>
