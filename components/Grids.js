@@ -9,12 +9,15 @@ import Paper from "@mui/material/Paper";
 import { IconButton } from "@mui/material";
 import { Grading } from "@mui/icons-material";
 import { useRouter } from "next/router";
+// const Grids = React.forwardRef((props, ref) => (
+//   <DataTable ref={ref} {...props} />
+// ));
 
-export default function Grids({ data }) {
+export default function Grids({ data, refpropanothername }) {
   const router = useRouter();
- // console.log(router)
+
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} ref={refpropanothername}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -37,7 +40,7 @@ export default function Grids({ data }) {
               <TableCell component="th" scope="row">
                 {new Date(row?.createdDatetimeStamp).toLocaleString()}
               </TableCell>
-              <TableCell align="right">{row?.invoiceType}</TableCell>
+              <TableCell align="right">{row?.referenceNumber}</TableCell>
               <TableCell align="right">{row?.discountBy}</TableCell>
               <TableCell align="right">{row?.discount}</TableCell>
               <TableCell align="right">{row?.organizationName}</TableCell>

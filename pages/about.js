@@ -79,7 +79,7 @@ const About = () => {
                         Gender: {data?.patientInfo?.gender}
                       </Typography>
                       <Typography>
-                        Age: {getDate(data?.patientInfo?.patientInfo)}
+                        Age:{data?.referenceNumber}
                       </Typography>
                     </Box>
                   </TableCell>

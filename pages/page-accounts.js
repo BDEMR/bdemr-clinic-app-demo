@@ -10,15 +10,29 @@ import {
   InputLabel,
   MenuItem,
   Container,
+  Menu,
 } from "@mui/material";
 import Grids from "../components/Grids";
 
 import jsonData from "../data.json";
-import DateRangePicker from "@wojtekmaj/react-daterange-picker/dist/entry.nostyle";
+import ReactToPrint from "react-to-print";
+
 export default function BasicButtons() {
-  const [discount, setDiscount] = React.useState("");
-  const [discountBy, setDiscountBy] = React.useState("");
-  const [value, setValue] = React.useState([null, null]);
+  const [discount, setDiscount] = React.useState();
+  const [discountBy, setDiscountBy] = React.useState();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const componentRef = React.useRef();
+
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const [start, setStart] = React.useState();
+  const [end, setEnd] = React.useState();
   const [data, setData] = React.useState(jsonData.data);
 
   const handleSubmit = () => {
@@ -31,15 +45,22 @@ export default function BasicButtons() {
       body = jsonData?.data?.filter((item) => item.discountBy === discountBy);
     } else if (discount) {
       body = jsonData?.data?.filter((item) => item.discount >= discount);
-    } else if (value[0] !== null) {
+    } else if (start && end) {
       body = jsonData?.data?.filter(
         (item) =>
-          new Date(value[0]) < new Date(item.createdDatetimeStamp) &&
-          new Date(value[1]) > new Date(item.createdDatetimeStamp)
+          new Date(start) < new Date(item.createdDatetimeStamp) &&
+          new Date(end) > new Date(item.createdDatetimeStamp)
+      );
+    } else {
+      body = jsonData?.data?.filter(
+        (item) =>
+          item.discount >= discount &&
+          item.discountBy === discountBy &&
+          new Date(start) < new Date(item.createdDatetimeStamp) &&
+          new Date(end) > new Date(item.createdDatetimeStamp)
       );
     }
 
-    console.log(body);
     setData(body);
   };
 
@@ -52,6 +73,7 @@ export default function BasicButtons() {
           label="Discount Found"
           onChange={(e) => setDiscount(e.target.value)}
           fullWidth
+          color="secondary"
           type="number"
         />
 
@@ -63,6 +85,7 @@ export default function BasicButtons() {
             value={discountBy}
             label="Discount By"
             onChange={(e) => setDiscountBy(e.target.value)}
+            color="secondary"
           >
             <MenuItem value={"Doctor"}>Doctor</MenuItem>
             <MenuItem value={"Management"}>Management</MenuItem>
@@ -70,7 +93,45 @@ export default function BasicButtons() {
           </Select>
         </FormControl>
 
-        <DateRangePicker onChange={setValue} value={value} />
+        {/* <DateRangePicker onChange={setValue} value={value} /> */}
+        {/* <DatetimeRangePicker onChange={setValue} value={value} /> */}
+
+        <Button
+          color="secondary"
+          fullWidth
+          onClick={handleClick}
+          variant="outlined"
+        >
+          Filter By
+        </Button>
+        <Menu
+          id="basic-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "basic-button",
+          }}
+        >
+          <MenuItem>
+            <TextField
+              value={start}
+              label="Start Date"
+              onChange={(e) => setStart(e.target.value)}
+              fullWidth
+              type="date"
+            />
+          </MenuItem>
+          <MenuItem>
+            <TextField
+              value={end}
+              label="End Date"
+              onChange={(e) => setEnd(e.target.value)}
+              fullWidth
+              type="date"
+            />
+          </MenuItem>
+        </Menu>
         <Button variant="contained" onClick={handleSubmit}>
           Search
         </Button>
@@ -79,25 +140,25 @@ export default function BasicButtons() {
           onClick={() => {
             setDiscount("");
             setDiscountBy("");
-            setValue([null, null]);
+            setStart("");
+            setEnd("");
             setData(jsonData?.data);
           }}
         >
           Reset
         </Button>
-        <Button
-          variant="contained"
-          onClick={() => {
-            if (window !== undefined) {
-              window.print();
-            }
-          }}
-        >
-          Print
-        </Button>
+        <ReactToPrint
+          trigger={() => <Button variant="contained">Print</Button>}
+          content={() => componentRef.current}
+        />
       </Stack>
       <Box sx={{ my: 2 }}>
-        <Grids data={data} />
+        {console.log(!discount, !discount && !discountBy, !start, !end)}
+        {!discount && !discountBy && !start && !end ? (
+          <Box></Box>
+        ) : (
+          <Grids data={data} refpropanothername={componentRef} />
+        )}
       </Box>
     </Container>
   );
