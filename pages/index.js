@@ -37,12 +37,12 @@ export default function Home() {
               <h2>Sell &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/check"}>
+          <Link href={"/object"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Expense &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/check"}>
+          <Link href={""}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Account Dashboard &rarr;</h2>
             </a>
