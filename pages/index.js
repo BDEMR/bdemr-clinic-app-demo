@@ -37,12 +37,23 @@ export default function Home() {
               <h2>Sell &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/page-expense-invoice"}>
+          <Link href={"/check"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Expense &rarr;</h2>
             </a>
           </Link>
+          <Link href={"/check"}>
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Account Dashboard &rarr;</h2>
+            </a>
+          </Link>
+          <Link href={"/catagory"}>
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Category &rarr;</h2>
+            </a>
+          </Link>
         </div>
+        
       </main>
 
       <footer className={styles.footer}>
