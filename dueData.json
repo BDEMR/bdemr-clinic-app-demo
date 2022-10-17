@@ -1,0 +1,3617 @@
+{
+    "data": [
+        {
+            "_id": "62fde0d5ca807f1da257af23",
+            "serial": "1Cchbu998Inv3",
+            "referenceNumber": "BRO-313",
+            "createdDatetimeStamp": 1660805333536,
+            "createdByUserSerial": "chbu",
+            "createdByUserName": "Mithon",
+            "patientSerial": "fhuo",
+            "patientName": "test patient",
+            "patientPhone": "12341808227",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "chbu",
+                    "lastModifiedDatetimeStamp": 1660805332809
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1660805332809,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1500,
+            "paid": null,
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 80,
+            "discountItemWise": "020",
+            "totalAmountReceieved": 0,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cchbu998TA2",
+                    "investigationSerial": "1Cchbu998TAI3",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                },
+                {
+                    "itemId": "60b5d967d726c532b4b68554",
+                    "name": "cdsa",
+                    "visitSerial": null,
+                    "discountAmount": "20",
+                    "discountType": "Percentage",
+                    "discountedPrice": 480,
+                    "advisedTestSerial": "1Cchbu998TA2",
+                    "investigationSerial": "1Cchbu998TAI4",
+                    "investigationIdOnServer": "60b5d967d726c532b4b68554",
+                    "price": 500,
+                    "actualCost": 0,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "location": "Room No. 203",
+                    "tag": "s pathology"
+                },
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cchbu998TA2",
+                    "investigationSerial": "1Cchbu998TAI5",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "",
+                "mobile": "",
+                "id": ""
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 3000,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "6301b8abaa660f16cc0d41f8",
+            "serial": "1Cdnkr1080Inv1",
+            "referenceNumber": "BRO-318",
+            "createdDatetimeStamp": 1661057194892,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhvk",
+            "patientName": "MD Hosain",
+            "patientPhone": "12342108222",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661057218595
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661057218595,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 600,
+            "paid": "600",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 200,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 600,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1080TA0",
+                    "investigationSerial": "1Cdnkr1080TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "6301ce6daa660f16cc0d4203",
+            "serial": "1Cdnkr1080Inv1",
+            "referenceNumber": "BRO-318",
+            "createdDatetimeStamp": 1661057194892,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhvk",
+            "patientName": "MD Hosain",
+            "patientPhone": "12342108222",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661057218595
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661057218595,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 600,
+            "paid": "600",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 200,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 600,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1080TA0",
+                    "investigationSerial": "1Cdnkr1080TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "lastSyncedDatetimeStamp": 1661062764441,
+            "clientCollectionName": "patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            },
+            "_clientId": 0,
+            "collection": "bdemr--patient-invoice"
+        },
+        {
+            "_id": "6302fef91c34613538d2c516",
+            "serial": "1Cdnkr1084Inv1",
+            "referenceNumber": "BRO-322",
+            "createdDatetimeStamp": 1661140729673,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhvp",
+            "patientName": "Zim null",
+            "patientPhone": "12342208221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661140728870
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661140728870,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 2000,
+            "paid": "1500",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 200,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 1500,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1084TA0",
+                    "investigationSerial": "1Cdnkr1084TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                },
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1084TA0",
+                    "investigationSerial": "1Cdnkr1084TAI2",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                },
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1084TA0",
+                    "investigationSerial": "1Cdnkr1084TAI3",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1661104800000,
+            "nextPaymentDate": 1661104800000,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "6305a5242ea4a6576abae8d0",
+            "serial": "1Cdnkr1101Inv1",
+            "referenceNumber": "BRO-325",
+            "createdDatetimeStamp": 1661314340032,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhwl",
+            "patientName": "Test null",
+            "patientPhone": "12342408221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661314338309
+                },
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661314395098
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661314396560,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 500,
+            "paid": "500",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 300,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 500,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1101TA0",
+                    "investigationSerial": "1Cdnkr1101TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1661277600000,
+            "nextPaymentDate": 1661277600000,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            },
+            "patientInfo": {
+                "_id": "6305a50b2ea4a6576abae8ce",
+                "collection": "user-info",
+                "userId": "ZVCOPn7LarfeF7HOhh9ypE2A0sXR4w0LsmNhlehghY5aA6qANkTsjqNiq4W3PW3pAnD0soE8WrNgnfClI0kSTebEGH2SHfjLRIAeXX4x914vaDHdEm5V8m0jCLktbpW3",
+                "serial": "fhwl",
+                "name": {
+                    "honorifics": null,
+                    "first": "Test",
+                    "middle": null,
+                    "last": null
+                },
+                "password": "N8lcsvhyLARZxJB6sJ++d+6EeK5lsDNQBWCOZiFOnE4=",
+                "dateOfBirth": "1998-08-01",
+                "effectiveRegion": "Bangladesh",
+                "profileImage": null,
+                "emailAddressList": [],
+                "phoneNumberList": [
+                    {
+                        "phoneNumberType": "Personal",
+                        "phoneNumber": "12342408221",
+                        "isPhoneNumberPublic": true,
+                        "isPhoneNumberVerified": false,
+                        "shouldSendPhoneNotification": false
+                    }
+                ],
+                "couponCode": null,
+                "created": {
+                    "date": 1661314299946,
+                    "byUserId": "mb88qyJxrxk31IFP0rxkjdZOvioMwVQLcFqqaOshHeYXc2WqmTbtwO0R6RncaBrBjErUbUDawhx9aitGg7xdQlKblephN6Bc2Xh4IYdlkztV70cV7oIUw3RRXMw8siTy"
+                },
+                "lastUpdated": {
+                    "date": 1661314299946,
+                    "byUserId": null
+                },
+                "roles": [
+                    {
+                        "roleName": "patient",
+                        "isActivated": true
+                    }
+                ],
+                "addressList": [
+                    {
+                        "addressTitle": "Personal",
+                        "addressType": "personal",
+                        "flat": null,
+                        "floor": null,
+                        "plot": null,
+                        "block": null,
+                        "road": null,
+                        "village": null,
+                        "addressUnion": null,
+                        "subdistrictName": null,
+                        "addressDistrict": null,
+                        "addressPostalOrZipCode": null,
+                        "addressCityOrTown": null,
+                        "addressLine1": null,
+                        "addressLine2": null,
+                        "stateOrProvince": null,
+                        "addressCountry": null
+                    }
+                ],
+                "faxNumberList": [],
+                "socialConnectionList": [],
+                "websiteList": [],
+                "specializationList": [],
+                "publicationList": [],
+                "awardList": [],
+                "employmentDetailsList": [],
+                "dateTimeJoined": 1661314314627,
+                "banDetailsList": [],
+                "degreeList": [],
+                "familyMemberList": [],
+                "doctorAccessPin": "0000",
+                "nationalIdCardNumber": null,
+                "gender": "male",
+                "infantAgeInDays": null,
+                "additionalPhoneNumber": null,
+                "bloodGroup": null,
+                "allergy": null,
+                "drugAllergy": {
+                    "value": null,
+                    "list": []
+                },
+                "expenditure": null,
+                "profession": null,
+                "education": null,
+                "emmergencyContact": {
+                    "name": null,
+                    "relation": null,
+                    "phoneNumber": null
+                },
+                "patientSpouseName": null,
+                "patientFatherName": null,
+                "patientMotherName": null,
+                "maritalAge": null,
+                "maritalStatus": null,
+                "numberOfFamilyMember": null,
+                "numberOfChildren": 0,
+                "policyList": [],
+                "belongOrganizationList": [
+                    {
+                        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+                        "patientId": "1234-240822-1",
+                        "organizationSerial": "1234"
+                    }
+                ],
+                "recordSpecificPatientIdList": [],
+                "patientType": "Regular",
+                "__meta": {
+                    "clientIdentifier": "bdemr-clinic-app",
+                    "clientName": "bdemr",
+                    "clientVersion": "1.1.525",
+                    "clientPlatform": "web"
+                }
+            }
+        },
+        {
+            "_id": "63099681e97d9931f9845305",
+            "serial": "1Cdnkr1117Inv1",
+            "referenceNumber": "BRO-328",
+            "createdDatetimeStamp": 1661572737519,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhwx",
+            "patientName": "Zim null",
+            "patientPhone": "12342708221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661572732963
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661572732963,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1200,
+            "paid": "1000",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 200,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 1000,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1117TA0",
+                    "investigationSerial": "1Cdnkr1117TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                },
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1117TA0",
+                    "investigationSerial": "1Cdnkr1117TAI2",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1661536800000,
+            "nextPaymentDate": 1661536800000,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Organization",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "630c356ae97d9931f9845376",
+            "serial": "1Cdnkr1120Inv1",
+            "referenceNumber": "BRO-330",
+            "createdDatetimeStamp": 1661744490609,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhxk",
+            "patientName": "zim Khondoker",
+            "patientPhone": "12342908222",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661744489880
+                },
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661744552488
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661744553102,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 600,
+            "paid": "600",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 200,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 600,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1120TA0",
+                    "investigationSerial": "1Cdnkr1120TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1661709600000,
+            "nextPaymentDate": 1661709600000,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            },
+            "patientInfo": {
+                "_id": "630c354be97d9931f9845374",
+                "collection": "user-info",
+                "userId": "tAM6gtt0DBZ6wbWULFXHCfueHaMkSmO5XAu3kNIf9Z17IDAthZmURSMu8yQOhJAra0oj5m8HDchWAmkC8AggWgXtuqQ5JtRyqf1aqL6vNCeiFW8lJASg3WRmsVslwdfB",
+                "serial": "fhxk",
+                "name": {
+                    "honorifics": null,
+                    "first": "zim",
+                    "middle": null,
+                    "last": "Khondoker"
+                },
+                "password": "N8lcsvhyLARZxJB6sJ++d+6EeK5lsDNQBWCOZiFOnE4=",
+                "dateOfBirth": "1997-08-01",
+                "effectiveRegion": "Bangladesh",
+                "profileImage": null,
+                "emailAddressList": [],
+                "phoneNumberList": [
+                    {
+                        "phoneNumberType": "Personal",
+                        "phoneNumber": "12342908222",
+                        "isPhoneNumberPublic": true,
+                        "isPhoneNumberVerified": false,
+                        "shouldSendPhoneNotification": false
+                    }
+                ],
+                "couponCode": null,
+                "created": {
+                    "date": 1661744441862,
+                    "byUserId": "mb88qyJxrxk31IFP0rxkjdZOvioMwVQLcFqqaOshHeYXc2WqmTbtwO0R6RncaBrBjErUbUDawhx9aitGg7xdQlKblephN6Bc2Xh4IYdlkztV70cV7oIUw3RRXMw8siTy"
+                },
+                "lastUpdated": {
+                    "date": 1661744441862,
+                    "byUserId": null
+                },
+                "roles": [
+                    {
+                        "roleName": "patient",
+                        "isActivated": true
+                    }
+                ],
+                "addressList": [
+                    {
+                        "addressTitle": "Personal",
+                        "addressType": "personal",
+                        "flat": null,
+                        "floor": null,
+                        "plot": null,
+                        "block": null,
+                        "road": null,
+                        "village": null,
+                        "addressUnion": null,
+                        "subdistrictName": null,
+                        "addressDistrict": null,
+                        "addressPostalOrZipCode": null,
+                        "addressCityOrTown": null,
+                        "addressLine1": null,
+                        "addressLine2": null,
+                        "stateOrProvince": null,
+                        "addressCountry": null
+                    }
+                ],
+                "faxNumberList": [],
+                "socialConnectionList": [],
+                "websiteList": [],
+                "specializationList": [],
+                "publicationList": [],
+                "awardList": [],
+                "employmentDetailsList": [],
+                "dateTimeJoined": 1661744458879,
+                "banDetailsList": [],
+                "degreeList": [],
+                "familyMemberList": [],
+                "doctorAccessPin": "0000",
+                "nationalIdCardNumber": null,
+                "gender": "male",
+                "infantAgeInDays": null,
+                "additionalPhoneNumber": null,
+                "bloodGroup": null,
+                "allergy": null,
+                "drugAllergy": {
+                    "value": null,
+                    "list": []
+                },
+                "expenditure": null,
+                "profession": null,
+                "education": null,
+                "emmergencyContact": {
+                    "name": null,
+                    "relation": null,
+                    "phoneNumber": null
+                },
+                "patientSpouseName": null,
+                "patientFatherName": null,
+                "patientMotherName": null,
+                "maritalAge": null,
+                "maritalStatus": null,
+                "numberOfFamilyMember": null,
+                "numberOfChildren": 0,
+                "policyList": [],
+                "belongOrganizationList": [
+                    {
+                        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+                        "patientId": "1234-290822-1",
+                        "organizationSerial": "1234"
+                    }
+                ],
+                "recordSpecificPatientIdList": [],
+                "patientType": "Regular",
+                "__meta": {
+                    "clientIdentifier": "bdemr-clinic-app",
+                    "clientName": "bdemr",
+                    "clientVersion": "1.1.525",
+                    "clientPlatform": "web"
+                }
+            }
+        },
+        {
+            "_id": "630c364de97d9931f984537d",
+            "serial": "1Cdnkr1121Inv1",
+            "referenceNumber": "BRO-331",
+            "createdDatetimeStamp": 1661744717220,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhxl",
+            "patientName": "test  null",
+            "patientPhone": "12342908223",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661744716535
+                },
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661744848761
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661744849426,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1300,
+            "paid": "1300",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 1300,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1121TA0",
+                    "investigationSerial": "1Cdnkr1121TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                },
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1121TA0",
+                    "investigationSerial": "1Cdnkr1121TAI2",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1661709600000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            },
+            "patientInfo": {
+                "_id": "630c362de97d9931f984537b",
+                "collection": "user-info",
+                "userId": "ZsEJCQWcoUNVgwKCW2mRydFneGOFbLDk8F6zoCeFRGPQ4C1ojgUYrHKqMtsLxsdVC3fM7rN1H6D7Q21ugoGCS2gaR7LeL0s40XavHmwTlkxMIrY9MlLMWYPQDjV5k6ax",
+                "serial": "fhxl",
+                "name": {
+                    "honorifics": null,
+                    "first": "test",
+                    "middle": null,
+                    "last": null
+                },
+                "password": "N8lcsvhyLARZxJB6sJ++d+6EeK5lsDNQBWCOZiFOnE4=",
+                "dateOfBirth": "1967-08-01",
+                "effectiveRegion": "Bangladesh",
+                "profileImage": null,
+                "emailAddressList": [],
+                "phoneNumberList": [
+                    {
+                        "phoneNumberType": "Personal",
+                        "phoneNumber": "12342908223",
+                        "isPhoneNumberPublic": true,
+                        "isPhoneNumberVerified": false,
+                        "shouldSendPhoneNotification": false
+                    }
+                ],
+                "couponCode": null,
+                "created": {
+                    "date": 1661744670701,
+                    "byUserId": "mb88qyJxrxk31IFP0rxkjdZOvioMwVQLcFqqaOshHeYXc2WqmTbtwO0R6RncaBrBjErUbUDawhx9aitGg7xdQlKblephN6Bc2Xh4IYdlkztV70cV7oIUw3RRXMw8siTy"
+                },
+                "lastUpdated": {
+                    "date": 1661744670702,
+                    "byUserId": null
+                },
+                "roles": [
+                    {
+                        "roleName": "patient",
+                        "isActivated": true
+                    }
+                ],
+                "addressList": [
+                    {
+                        "addressTitle": "Personal",
+                        "addressType": "personal",
+                        "flat": null,
+                        "floor": null,
+                        "plot": null,
+                        "block": null,
+                        "road": null,
+                        "village": null,
+                        "addressUnion": null,
+                        "subdistrictName": null,
+                        "addressDistrict": null,
+                        "addressPostalOrZipCode": null,
+                        "addressCityOrTown": null,
+                        "addressLine1": null,
+                        "addressLine2": null,
+                        "stateOrProvince": null,
+                        "addressCountry": null
+                    }
+                ],
+                "faxNumberList": [],
+                "socialConnectionList": [],
+                "websiteList": [],
+                "specializationList": [],
+                "publicationList": [],
+                "awardList": [],
+                "employmentDetailsList": [],
+                "dateTimeJoined": 1661744685219,
+                "banDetailsList": [],
+                "degreeList": [],
+                "familyMemberList": [],
+                "doctorAccessPin": "0000",
+                "nationalIdCardNumber": null,
+                "gender": "male",
+                "infantAgeInDays": null,
+                "additionalPhoneNumber": null,
+                "bloodGroup": null,
+                "allergy": null,
+                "drugAllergy": {
+                    "value": null,
+                    "list": []
+                },
+                "expenditure": null,
+                "profession": null,
+                "education": null,
+                "emmergencyContact": {
+                    "name": null,
+                    "relation": null,
+                    "phoneNumber": null
+                },
+                "patientSpouseName": null,
+                "patientFatherName": null,
+                "patientMotherName": null,
+                "maritalAge": null,
+                "maritalStatus": null,
+                "numberOfFamilyMember": null,
+                "numberOfChildren": 0,
+                "policyList": [],
+                "belongOrganizationList": [
+                    {
+                        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+                        "patientId": "1234-290822-2",
+                        "organizationSerial": "1234"
+                    }
+                ],
+                "recordSpecificPatientIdList": [],
+                "patientType": "Regular",
+                "__meta": {
+                    "clientIdentifier": "bdemr-clinic-app",
+                    "clientName": "bdemr",
+                    "clientVersion": "1.1.525",
+                    "clientPlatform": "web"
+                }
+            }
+        },
+        {
+            "_id": "630d87c1e97d9931f98453e1",
+            "serial": "1Cdnkr1123Inv1",
+            "referenceNumber": "BRO-332",
+            "createdDatetimeStamp": 1661831105206,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhxo",
+            "patientName": "Md Zim",
+            "patientPhone": "12343008222",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661831122830
+                },
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661831207531
+                },
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661831239911
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661831218557,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 550,
+            "paid": "500",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 50,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 500,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1123TA0",
+                    "investigationSerial": "1Cdnkr1123TAI1",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1661796000000,
+            "nextPaymentDate": 1661796000000,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Organization",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            },
+            "patientInfo": {
+                "_id": "630d8795e97d9931f98453df",
+                "collection": "user-info",
+                "userId": "NLZnHC0I7h4cnabal83rTjQ2hKSsbWKFjwm0insOVrV6oqQlbzCKu6RTMCGGsMJFpvFJEQxeLZYkS6bqYkflHCSUHCg2dUKz0bT81stpeOJMQKCDuiBvneycWmndeL3V",
+                "serial": "fhxo",
+                "name": {
+                    "honorifics": null,
+                    "first": "Md",
+                    "middle": null,
+                    "last": "Zim"
+                },
+                "password": "N8lcsvhyLARZxJB6sJ++d+6EeK5lsDNQBWCOZiFOnE4=",
+                "dateOfBirth": "1777-08-01",
+                "effectiveRegion": "Bangladesh",
+                "profileImage": null,
+                "emailAddressList": [],
+                "phoneNumberList": [
+                    {
+                        "phoneNumberType": "Personal",
+                        "phoneNumber": "12343008222",
+                        "isPhoneNumberPublic": true,
+                        "isPhoneNumberVerified": false,
+                        "shouldSendPhoneNotification": false
+                    }
+                ],
+                "couponCode": null,
+                "created": {
+                    "date": 1661831054403,
+                    "byUserId": "mb88qyJxrxk31IFP0rxkjdZOvioMwVQLcFqqaOshHeYXc2WqmTbtwO0R6RncaBrBjErUbUDawhx9aitGg7xdQlKblephN6Bc2Xh4IYdlkztV70cV7oIUw3RRXMw8siTy"
+                },
+                "lastUpdated": {
+                    "date": 1661831054404,
+                    "byUserId": null
+                },
+                "roles": [
+                    {
+                        "roleName": "patient",
+                        "isActivated": true
+                    }
+                ],
+                "addressList": [
+                    {
+                        "addressTitle": "Personal",
+                        "addressType": "personal",
+                        "flat": null,
+                        "floor": null,
+                        "plot": null,
+                        "block": null,
+                        "road": null,
+                        "village": null,
+                        "addressUnion": null,
+                        "subdistrictName": null,
+                        "addressDistrict": null,
+                        "addressPostalOrZipCode": null,
+                        "addressCityOrTown": null,
+                        "addressLine1": null,
+                        "addressLine2": null,
+                        "stateOrProvince": null,
+                        "addressCountry": null
+                    }
+                ],
+                "faxNumberList": [],
+                "socialConnectionList": [],
+                "websiteList": [],
+                "specializationList": [],
+                "publicationList": [],
+                "awardList": [],
+                "employmentDetailsList": [],
+                "dateTimeJoined": 1661831060661,
+                "banDetailsList": [],
+                "degreeList": [],
+                "familyMemberList": [],
+                "doctorAccessPin": "0000",
+                "nationalIdCardNumber": null,
+                "gender": "male",
+                "infantAgeInDays": null,
+                "additionalPhoneNumber": null,
+                "bloodGroup": null,
+                "allergy": null,
+                "drugAllergy": {
+                    "value": null,
+                    "list": []
+                },
+                "expenditure": null,
+                "profession": null,
+                "education": null,
+                "emmergencyContact": {
+                    "name": null,
+                    "relation": null,
+                    "phoneNumber": null
+                },
+                "patientSpouseName": null,
+                "patientFatherName": null,
+                "patientMotherName": null,
+                "maritalAge": null,
+                "maritalStatus": null,
+                "numberOfFamilyMember": null,
+                "numberOfChildren": 0,
+                "policyList": [],
+                "belongOrganizationList": [
+                    {
+                        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+                        "patientId": "1234-300822-1",
+                        "organizationSerial": "1234"
+                    }
+                ],
+                "recordSpecificPatientIdList": [],
+                "patientType": "Regular",
+                "__meta": {
+                    "clientIdentifier": "bdemr-clinic-app",
+                    "clientName": "bdemr",
+                    "clientVersion": "1.1.525",
+                    "clientPlatform": "web"
+                }
+            }
+        },
+        {
+            "_id": "630ed3ffe288a6598f4273d3",
+            "serial": "1Cdnkr1126Inv1",
+            "referenceNumber": "BRO-334",
+            "createdDatetimeStamp": 1661916159268,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhxt",
+            "patientName": "Md Khandaker",
+            "patientPhone": "12343108221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1661916167165
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1661916167165,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1200,
+            "paid": "1000",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 200,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 1000,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1126TA0",
+                    "investigationSerial": "1Cdnkr1126TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                },
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1126TA0",
+                    "investigationSerial": "1Cdnkr1126TAI2",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1661882400000,
+            "nextPaymentDate": 1661882400000,
+            "referralDoctor": {
+                "name": "Md Abdur Rahaman ",
+                "mobile": "1814286575"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Management",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.525",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "63102f6e5d23092db5356eea",
+            "serial": "1Cdnkr1130Inv1",
+            "referenceNumber": "BRO-337",
+            "createdDatetimeStamp": 1662005102110,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhya",
+            "patientName": "Test",
+            "patientPhone": "12340109222",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1664510705775
+                },
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1662181196109
+                },
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1662181219375
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1662181203628,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 700,
+            "paid": "500",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 500,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1130TA0",
+                    "investigationSerial": "1Cdnkr1130TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1664474400000,
+            "nextPaymentDate": 1664474400000,
+            "referralDoctor": {
+                "name": "Dr Ibnesina shuvo MBBS,BCS",
+                "mobile": "01828114401",
+                "id": "1Cdlpb476REFDOC0"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.526",
+                "clientPlatform": "web"
+            },
+            "patientInfo": {
+                "_id": "63102f4a5d23092db5356ee8",
+                "collection": "user-info",
+                "userId": "1avO8jMyl81d0kWBS2jOZL7LoQdA0NCTaQihOSDpVOFxEpbV5nVYe2mgZAjN5o5fOaVOykcd65A2TvxOxCzej1QoHhWru63tWmc0qKpcaWfdsfTtJYApl2hTqN3bWsWV",
+                "serial": "fhya",
+                "name": {
+                    "honorifics": null,
+                    "first": "Test",
+                    "middle": null,
+                    "last": null
+                },
+                "password": "N8lcsvhyLARZxJB6sJ++d+6EeK5lsDNQBWCOZiFOnE4=",
+                "dateOfBirth": "1997-09-01",
+                "effectiveRegion": "Bangladesh",
+                "profileImage": null,
+                "emailAddressList": [],
+                "phoneNumberList": [
+                    {
+                        "phoneNumberType": "Personal",
+                        "phoneNumber": "12340109222",
+                        "isPhoneNumberPublic": true,
+                        "isPhoneNumberVerified": false,
+                        "shouldSendPhoneNotification": false
+                    }
+                ],
+                "couponCode": null,
+                "created": {
+                    "date": 1664510654289,
+                    "byUserId": "mb88qyJxrxk31IFP0rxkjdZOvioMwVQLcFqqaOshHeYXc2WqmTbtwO0R6RncaBrBjErUbUDawhx9aitGg7xdQlKblephN6Bc2Xh4IYdlkztV70cV7oIUw3RRXMw8siTy"
+                },
+                "lastUpdated": {
+                    "date": 1664510654289,
+                    "byUserId": null
+                },
+                "roles": [
+                    {
+                        "roleName": "patient",
+                        "isActivated": true
+                    }
+                ],
+                "addressList": [
+                    {
+                        "addressTitle": "Personal",
+                        "addressType": "personal",
+                        "flat": null,
+                        "floor": null,
+                        "plot": null,
+                        "block": null,
+                        "road": null,
+                        "village": null,
+                        "addressUnion": null,
+                        "subdistrictName": null,
+                        "addressDistrict": null,
+                        "addressPostalOrZipCode": null,
+                        "addressCityOrTown": null,
+                        "addressLine1": null,
+                        "addressLine2": null,
+                        "stateOrProvince": null,
+                        "addressCountry": null
+                    }
+                ],
+                "faxNumberList": [],
+                "socialConnectionList": [],
+                "websiteList": [],
+                "specializationList": [],
+                "publicationList": [],
+                "awardList": [],
+                "employmentDetailsList": [],
+                "dateTimeJoined": 1662005066582,
+                "banDetailsList": [],
+                "degreeList": [],
+                "familyMemberList": [],
+                "doctorAccessPin": "0000",
+                "nationalIdCardNumber": null,
+                "gender": "male",
+                "infantAgeInDays": null,
+                "additionalPhoneNumber": null,
+                "bloodGroup": null,
+                "allergy": null,
+                "drugAllergy": {
+                    "value": null,
+                    "list": []
+                },
+                "expenditure": null,
+                "profession": null,
+                "education": null,
+                "emmergencyContact": {
+                    "name": null,
+                    "relation": null,
+                    "phoneNumber": null
+                },
+                "patientSpouseName": null,
+                "patientFatherName": null,
+                "patientMotherName": null,
+                "maritalAge": null,
+                "maritalStatus": null,
+                "numberOfFamilyMember": null,
+                "numberOfChildren": 0,
+                "policyList": [],
+                "belongOrganizationList": [
+                    {
+                        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+                        "patientId": "1234-010922-1",
+                        "organizationSerial": "1234"
+                    }
+                ],
+                "recordSpecificPatientIdList": [],
+                "patientType": "Regular",
+                "__meta": {
+                    "clientIdentifier": "bdemr-clinic-app",
+                    "clientName": "bdemr",
+                    "clientVersion": "1.1.526",
+                    "clientPlatform": "web"
+                }
+            }
+        },
+        {
+            "_id": "63141ed3b914ad7534ed5fdd",
+            "serial": "1Cdnkr1135Inv1",
+            "referenceNumber": "BRO-339",
+            "createdDatetimeStamp": 1662262995491,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhyr",
+            "patientName": "Md khondoker",
+            "patientPhone": "12340409221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1662263005249
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1662263005249,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1400,
+            "paid": "1000",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 500,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 1000,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1135TA0",
+                    "investigationSerial": "1Cdnkr1135TAI1",
+                    "investigationIdOnServer": "5e311c5ee25dc07ca96ae101",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": null,
+                    "category": "investigation",
+                    "tag": ""
+                },
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1135TA0",
+                    "investigationSerial": "1Cdnkr1135TAI2",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                },
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cdnkr1135TA0",
+                    "investigationSerial": "1Cdnkr1135TAI3",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1662228000000,
+            "nextPaymentDate": 1662228000000,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Organization",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.526",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "631c09ff0d736e6830c54b58",
+            "serial": "1Cdnkr1168Inv1",
+            "referenceNumber": "BRO-347",
+            "createdDatetimeStamp": 1662781951243,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhzv",
+            "patientName": "Milon null",
+            "patientPhone": "12341009221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1662695520526
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1662695520526,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1000,
+            "paid": "700",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 700,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1168TA0",
+                    "investigationSerial": "1Cdnkr1168TAI1",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                },
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cdnkr1168TA0",
+                    "investigationSerial": "1Cdnkr1168TAI2",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1662714000000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Md Abdur Rahaman ",
+                "mobile": "1814286575"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Doctor",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": " Rahat shakib",
+                "phone": "01622160714",
+                "email": "",
+                "role": "Doctor",
+                "id": "Ax9D1D9PrRbO6N4wcj9wKDvep00wjD6rYzFdFqL3gv96TL72IMhqMRxWVJ6OUcXfFsdrU8VEHHUbNDgyxyDAzkzwv3rXb9vRknH1ERrUmZI2CbnfmIhLYnRVJuwd89BD"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.526",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "631c0c8d0d736e6830c54b5f",
+            "serial": "1Cdnkr1168Inv3",
+            "referenceNumber": "BRO-349",
+            "createdDatetimeStamp": 1662782605020,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fhzw",
+            "patientName": "xyz null",
+            "patientPhone": "12341009224",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1662696196400
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1662696196400,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 700,
+            "paid": "500",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 500,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1168TA3",
+                    "investigationSerial": "1Cdnkr1168TAI4",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1662714000000,
+            "nextPaymentDate": 1664474400000,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Management",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Md Amir Hamza",
+                "phone": "01744473493",
+                "email": "",
+                "role": "test",
+                "id": "116WWqLFU5ZWrySm24lzkuvPbXqBbjKZRMq8JozStNk8UL0SjT4WpjKHr6vZ810yQPvqUhjNlBR6jAJERLY7fMEHtfk5Z4UmhsrKXKrvZCqTMytBQSyYMrfUeC993CwW"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.526",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "632175bc504b2b16883de035",
+            "serial": "1Cdnkr1183Inv1",
+            "referenceNumber": "BRO-351",
+            "createdDatetimeStamp": 1663137212183,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fiar",
+            "patientName": "Md Hosain",
+            "patientPhone": "12341409221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1662273177201
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1662273177201,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1200,
+            "paid": "1000",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 200,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 1000,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1183TA0",
+                    "investigationSerial": "1Cdnkr1183TAI1",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                },
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1183TA0",
+                    "investigationSerial": "1Cdnkr1183TAI2",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1662228000000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "This is a test invoice ",
+            "referenceBy": "",
+            "discountBy": "Management",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.527",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "632542df90690e25e47b1fa0",
+            "serial": "1Cdnkr1193Inv1",
+            "referenceNumber": "BRO-371",
+            "createdDatetimeStamp": 1663386335599,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fibg",
+            "patientName": "Test null",
+            "patientPhone": "12341709221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1663386347379
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1663386347379,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 500,
+            "paid": "300",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 300,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1193TA0",
+                    "investigationSerial": "1Cdnkr1193TAI1",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1663351200000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "This is The Test Invoice ",
+            "referenceBy": "",
+            "discountBy": "Organization",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.528",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "632696333605bb5ea09c11c2",
+            "serial": "1Cdnkr1207Inv1",
+            "referenceNumber": "BRO-373",
+            "createdDatetimeStamp": 1663473203273,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fibl",
+            "patientName": "Md Khondoker",
+            "patientPhone": "12341809221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1663473209453
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1663473209453,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1000,
+            "paid": "800",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 800,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "61669e82428bdd4ce633cab3",
+                    "name": "RBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 600,
+                    "advisedTestSerial": "1Cdnkr1207TA0",
+                    "investigationSerial": "1Cdnkr1207TAI1",
+                    "investigationIdOnServer": "61669e82428bdd4ce633cab3",
+                    "price": 600,
+                    "actualCost": 0,
+                    "totalPrice": 600,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "Blood"
+                },
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cdnkr1207TA0",
+                    "investigationSerial": "1Cdnkr1207TAI2",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.529",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "63293c553605bb5ea09c1416",
+            "serial": "1Cdnkr1220Inv1",
+            "referenceNumber": "BRO-380",
+            "createdDatetimeStamp": 1663646805844,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "ficg",
+            "patientName": "Md Zim",
+            "patientPhone": "12342009223",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1663646811484
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1663646811484,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 700,
+            "paid": "500",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 500,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1220TA0",
+                    "investigationSerial": "1Cdnkr1220TAI1",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1663610400000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.530",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "632a8615eb17d45c26254b4c",
+            "serial": "1Cdnkr1221Inv1",
+            "referenceNumber": "BRO-382",
+            "createdDatetimeStamp": 1663731220941,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "ficn",
+            "patientName": "Md Khondoker",
+            "patientPhone": "12342109221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1663731231828
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1663731231828,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1200,
+            "paid": "1000",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 1000,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cdnkr1221TA0",
+                    "investigationSerial": "1Cdnkr1221TAI1",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                },
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1221TA0",
+                    "investigationSerial": "1Cdnkr1221TAI2",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1663752600000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Tahmidur Rahman  MBBS, MD(Child Specialist)",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Management",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.530",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "632a88f8eb17d45c26254b53",
+            "serial": "1Cdnkr1222Inv1",
+            "referenceNumber": "BRO-384",
+            "createdDatetimeStamp": 1663731960652,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fico",
+            "patientName": "Md Hasan",
+            "patientPhone": "12342109223",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1663731990689
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1663731990689,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1200,
+            "paid": "800",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 800,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1222TA0",
+                    "investigationSerial": "1Cdnkr1222TAI1",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                },
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cdnkr1222TA0",
+                    "investigationSerial": "1Cdnkr1222TAI2",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1663750800000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "Good Luck ",
+            "referenceBy": "",
+            "discountBy": "Management",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctor",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.530",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "632bda2876170775e50d398b",
+            "serial": "1Cdnkr1238Inv1",
+            "referenceNumber": "BRO-385",
+            "createdDatetimeStamp": 1663818280048,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "ficx",
+            "patientName": "Sakib null",
+            "patientPhone": "12342209221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1663818289480
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1663818289480,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 750,
+            "paid": "450",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 50,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 450,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1238TA0",
+                    "investigationSerial": "1Cdnkr1238TAI1",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1663783200000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Organization",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctors",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.531",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "632e7d8aa4d6ea3ced366f7c",
+            "serial": "1Cdnkr1250Inv1",
+            "referenceNumber": "BRO-389",
+            "createdDatetimeStamp": 1663991178063,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fidm",
+            "patientName": "Md siddik",
+            "patientPhone": "12342409221",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1663991190285
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1663991190285,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1200,
+            "paid": "800",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 100,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 800,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "60ac9400213ba67ff576e9e9",
+                    "name": "CBC",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "",
+                    "discountedPrice": 800,
+                    "advisedTestSerial": "1Cdnkr1250TA0",
+                    "investigationSerial": "1Cdnkr1250TAI1",
+                    "investigationIdOnServer": "60ac9400213ba67ff576e9e9",
+                    "price": 800,
+                    "actualCost": 0,
+                    "totalPrice": 800,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "pathology "
+                },
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cdnkr1250TA0",
+                    "investigationSerial": "1Cdnkr1250TAI2",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Prosad Kumar Sarker  MBBS, BCS(Health), MD(Neurology) BSMMU Neuromedicine Specialist",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Management",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "Dr amrito (corona specialist)",
+                "phone": "01714568978",
+                "email": "",
+                "role": "Doctors",
+                "id": "QELZimBpC6D5uU86vKMxnOOZwiANE9bk3GWCUcEwMbuoUfZgPOsOoYyYrXDPNX6j0u7SlS1IMSwXFHAxsJAYI4cMZtEAzAmOlsYvhgFrJmJPn86oTNRaJHTjqmCz814s"
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.531",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "6337dd7dc58a2d6e8eb8cf9f",
+            "serial": "1Cdnkr1266Inv1",
+            "referenceNumber": "BRO-399",
+            "createdDatetimeStamp": 1664605565758,
+            "createdByUserSerial": "dnkr",
+            "createdByUserName": "MD Zim  khondaker",
+            "patientSerial": "fifc",
+            "patientName": "Test null",
+            "patientPhone": "12340110222",
+            "patientEmail": "",
+            "patientSecondaryPhone": null,
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "dnkr",
+                    "lastModifiedDatetimeStamp": 1664605564014
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1664605564014,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 450,
+            "paid": "450",
+            "badDebt": 0,
+            "previouseDue": 0,
+            "lastPaid": null,
+            "discount": 50,
+            "discountItemWise": 0,
+            "totalAmountReceieved": 450,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "61346be501a32158963b530b",
+                    "name": "X-Ray",
+                    "visitSerial": null,
+                    "discountAmount": 0,
+                    "discountType": "Amount",
+                    "discountedPrice": 500,
+                    "advisedTestSerial": "1Cdnkr1266TA0",
+                    "investigationSerial": "1Cdnkr1266TAI1",
+                    "investigationIdOnServer": "61346be501a32158963b530b",
+                    "price": 500,
+                    "actualCost": 400,
+                    "totalPrice": 500,
+                    "qty": 1,
+                    "stock": 0,
+                    "category": "investigation",
+                    "tag": "X-Ray"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1664560800000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "Dr. Md. Shahjahan Ali (Tito)  MBBS, MS(Surgery), Assit. Prof. Surgeru Dept. (RMCH)",
+                "mobile": "9738262934"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "Organization",
+            "discountFromFund": {},
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "outdoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.1.540",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633eea731b9097492e010246",
+            "serial": "1Ccdou4439Inv5",
+            "referenceNumber": "BRO-411",
+            "createdDatetimeStamp": 1665067634999,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "esew",
+            "patientName": "Khaja Sheikh Imran Sabuj",
+            "patientPhone": "01521325547",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665067568559
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665067632594
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665067632594,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 830,
+            "previouseDue": -50,
+            "paid": "830",
+            "lastPaid": null,
+            "discount": 50,
+            "totalAmountReceieved": 830,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "qty": 1,
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": "1Dcdou4438V0",
+                    "advisedTestSerial": "1Dcdou4438TA1",
+                    "investigationSerial": "1Dcdou4438TST0",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "discountAmount": 0,
+                    "discountedPrice": 800,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1665150600000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "",
+                "mobile": "",
+                "id": ""
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 80,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 320,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633ef6f01b9097492e01025c",
+            "serial": "1Ccdou4439Inv19",
+            "referenceNumber": "BRO-439",
+            "createdDatetimeStamp": 1665070832797,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "ficv",
+            "patientName": "MIthon Vola ",
+            "patientPhone": "11223311223",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665070783448
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665070830362
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665070830362,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 860,
+            "previouseDue": -20,
+            "paid": "860",
+            "lastPaid": null,
+            "discount": 20,
+            "totalAmountReceieved": 860,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "qty": 1,
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": null,
+                    "advisedTestSerial": "1Ccdou4439TA6",
+                    "investigationSerial": "1Ccdou4439TAI5",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "discountAmount": 0,
+                    "discountedPrice": 800,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1665079200000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "dr.Amrito Kumar sarkar ",
+                "mobile": "01317178969"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 80,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 7199.98,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633f047d1b9097492e01026d",
+            "serial": "1Ccdou4439Inv24",
+            "referenceNumber": "BRO-448",
+            "createdDatetimeStamp": 1665074300909,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "esew",
+            "patientName": "Khaja Sheikh Imran Sabuj",
+            "patientPhone": "01521325547",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074245932
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074298437
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665074298437,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 640,
+            "previouseDue": -160,
+            "paid": "640",
+            "lastPaid": null,
+            "discount": 160,
+            "totalAmountReceieved": 640,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "qty": 1,
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": "1Dcdou4440V0",
+                    "advisedTestSerial": "1Dcdou4440TA1",
+                    "investigationSerial": "1Dcdou4440TST0",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "discountAmount": 0,
+                    "discountedPrice": 800,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1665079200000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "dr.Amrito Kumar sarkar ",
+                "mobile": "01317178969"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633f05c11b9097492e01026e",
+            "serial": "1Ccdou4439Inv25",
+            "referenceNumber": "BRO-450",
+            "createdDatetimeStamp": 1665074625428,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "esew",
+            "patientName": "Khaja Sheikh Imran Sabuj",
+            "patientPhone": "01521325547",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074545307
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074622911
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665074622911,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 760,
+            "previouseDue": -80,
+            "paid": "760",
+            "lastPaid": null,
+            "discount": 80,
+            "totalAmountReceieved": 760,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "qty": 1,
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": "1Dcdou4440V0",
+                    "advisedTestSerial": "1Dcdou4440TA1",
+                    "investigationSerial": "1Dcdou4440TST0",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "discountAmount": 0,
+                    "discountedPrice": 800,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "",
+                "mobile": "",
+                "id": ""
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 40,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633f06ac1b9097492e01026f",
+            "serial": "1Ccdou4439Inv26",
+            "referenceNumber": "BRO-452",
+            "createdDatetimeStamp": 1665074860420,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "esew",
+            "patientName": "Khaja Sheikh Imran Sabuj",
+            "patientPhone": "01521325547",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074835606
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074857877
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665074857877,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 720,
+            "previouseDue": -120,
+            "paid": "720",
+            "lastPaid": null,
+            "discount": 120,
+            "totalAmountReceieved": 720,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "qty": 1,
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": "1Dcdou4440V0",
+                    "advisedTestSerial": "1Dcdou4440TA1",
+                    "investigationSerial": "1Dcdou4440TST0",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "discountAmount": 0,
+                    "discountedPrice": 800,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "",
+                "mobile": "",
+                "id": ""
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 40,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633f07221b9097492e010270",
+            "serial": "1Ccdou4439Inv27",
+            "referenceNumber": "BRO-454",
+            "createdDatetimeStamp": 1665074978494,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "esew",
+            "patientName": "Khaja Sheikh Imran Sabuj",
+            "patientPhone": "01521325547",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074942446
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665074976249
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665074976249,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 680,
+            "previouseDue": -160,
+            "paid": "680",
+            "lastPaid": null,
+            "discount": 160,
+            "totalAmountReceieved": 680,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "5e311c5ee25dc07ca96ae101",
+                    "qty": 1,
+                    "name": "Complete Blood Count (CBC)",
+                    "visitSerial": "1Dcdou4440V0",
+                    "advisedTestSerial": "1Dcdou4440TA1",
+                    "investigationSerial": "1Dcdou4440TST0",
+                    "price": 800,
+                    "actualCost": 500,
+                    "totalPrice": 800,
+                    "discountAmount": 0,
+                    "discountedPrice": 800,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": 1665684000000,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "dr.Amrito Kumar sarkar ",
+                "mobile": "01317178969"
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 40,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633f0ece1b9097492e01027e",
+            "serial": "1Ccdou4441Inv4",
+            "referenceNumber": "BRO-470",
+            "createdDatetimeStamp": 1665076942597,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "esew",
+            "patientName": "Khaja Sheikh Imran Sabuj",
+            "patientPhone": "01521325547",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665076899796
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665076940307
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665076940307,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1125,
+            "previouseDue": -374.9900000000016,
+            "paid": "1125",
+            "lastPaid": null,
+            "discount": 375,
+            "totalAmountReceieved": 1125,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "6295cf91b6c375386ea9c090",
+                    "qty": 1,
+                    "name": "24 Hr. Ambulatory Blood Pressure",
+                    "visitSerial": null,
+                    "advisedTestSerial": "1Ccdou4441TA3",
+                    "investigationSerial": "1Ccdou4441TAI2",
+                    "price": 1500,
+                    "actualCost": 0,
+                    "totalPrice": 1500,
+                    "discountAmount": 0,
+                    "discountedPrice": 1500,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "",
+                "mobile": "",
+                "id": ""
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        },
+        {
+            "_id": "633f13b11b9097492e010282",
+            "serial": "1Ccdou4441Inv8",
+            "referenceNumber": "BRO-478",
+            "createdDatetimeStamp": 1665078193806,
+            "createdByUserSerial": "cdou",
+            "createdByUserName": "Amrito Kumar Sarker",
+            "patientSerial": "esew",
+            "patientName": "Khaja Sheikh Imran Sabuj",
+            "patientPhone": "01521325547",
+            "patientEmail": "",
+            "organizationId": "5e3119c4e25dc07ca96ae0f1",
+            "organizationName": "BDEMR Research Organization",
+            "modificationHistory": [
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665078172438
+                },
+                {
+                    "userSerial": "cdou",
+                    "lastModifiedDatetimeStamp": 1665078191357
+                }
+            ],
+            "lastModifiedDatetimeStamp": 1665078191357,
+            "invoiceType": "patient",
+            "category": "",
+            "advancePayment": 0,
+            "remainingBalance": 0,
+            "totalBilled": 1050,
+            "previouseDue": -449.9900000000016,
+            "paid": "1050",
+            "lastPaid": null,
+            "discount": 450,
+            "totalAmountReceieved": 1050,
+            "cashBackPaid": 0,
+            "flags": {
+                "flagAsError": false,
+                "markAsCompleted": false
+            },
+            "data": [
+                {
+                    "itemId": "6295cf91b6c375386ea9c090",
+                    "qty": 1,
+                    "name": "24 Hr. Ambulatory Blood Pressure",
+                    "visitSerial": null,
+                    "advisedTestSerial": "1Ccdou4441TA3",
+                    "investigationSerial": "1Ccdou4441TAI2",
+                    "price": 1500,
+                    "actualCost": 0,
+                    "totalPrice": 1500,
+                    "discountAmount": 0,
+                    "discountedPrice": 1500,
+                    "category": "investigation"
+                }
+            ],
+            "commission": [],
+            "availableToPatient": true,
+            "reportDeliveryDateTime": null,
+            "nextPaymentDate": null,
+            "referralDoctor": {
+                "name": "",
+                "mobile": "",
+                "id": ""
+            },
+            "remarks": "",
+            "referenceBy": "",
+            "discountBy": "",
+            "discountFromFund": {
+                "amount": 0
+            },
+            "vatOrTax": 0,
+            "dueGuarantor": {
+                "name": "",
+                "phone": "",
+                "email": "",
+                "role": "",
+                "id": ""
+            },
+            "patientStatus": "indoor",
+            "availableBalance": 0,
+            "collection": "bdemr--patient-invoice",
+            "__meta": {
+                "clientIdentifier": "bdemr-clinic-app",
+                "clientName": "bdemr",
+                "clientVersion": "1.0.0",
+                "clientPlatform": "web"
+            }
+        }
+    ]
+}

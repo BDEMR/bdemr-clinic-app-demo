@@ -27,12 +27,12 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href={"/page-accounts"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Accounts &rarr;</h2>
+              <h2> Discount &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/page-sell-invoice"}>
+          <Link href={"/due-page"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Sell &rarr;</h2>
+              <h2>Due report &rarr;</h2>
             </a>
           </Link>
           <Link href={"/page-expense-invoice"}>

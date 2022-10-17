@@ -19,8 +19,22 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+.dateStyle {
+   
+  height: 55px;
+}
+
+.search{
+  background-color:#4CAF50;
+}
+.print{
+  background-color:  #e7e7e7;
+  padding: 10px;
 }
