@@ -45,12 +45,12 @@ export default function Home() {
               <h2>Dooctor note &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/page-expense-invoice"}>
+          <Link href="adviseNote">
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Advise &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/page-expense-invoice"}>
+          <Link href="">
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Expense &rarr;</h2>
             </a>
