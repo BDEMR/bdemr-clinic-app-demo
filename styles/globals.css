@@ -26,15 +26,157 @@ a {
   }
 }
 
-.dateStyle {
-   
-  height: 55px;
+
+
+
+
+
+
+
+.Addmision-Info {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr);
+
 }
 
-.search{
-  background-color:#4CAF50;
+.admison-container {
+  padding: 30px 100px;
+
+
 }
-.print{
-  background-color:  #e7e7e7;
-  padding: 10px;
+
+.container {
+  margin-top: 20px;
+  margin: 40px;
+  padding: 30px;
+  background-color: whitesmoke;
+}
+
+.title {
+  text-align: center;
+
+}
+
+.operationName {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.patientInfo {
+  margin-top: 23px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.OperationTime {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.operationFiled {
+
+  width: 80%;
+}
+
+.operationInfo {
+  margin-top: 15px;
+}
+
+.babyInfo {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.mainScore {
+  display: grid;
+  grid-template-columns: 8% 90%;
+  gap: 10px;
+}
+
+.SubMainScore {
+  margin-top: 18px;
+  margin-left: 0%;
+  padding-left: 0%;
+  display: grid;
+
+}
+
+.scoreFiled {
+  width: 60%;
+}
+
+.doctorSign {
+  display: grid;
+  margin-left: 80%;
+}
+
+.parentsSign {
+  display: grid;
+  grid-template-columns: 13% 80%;
+}
+
+.subParentInfo {
+  display: grid;
+  margin-top: 18px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+/* Advise doctor */
+
+.inFild {
+  margin-top: 30px;
+  width: 100%;
+ background-color: whitesmoke;
+ position: sticky;
+
+}
+
+.adviseBtn {
+  display: flex;
+  margin-left: 70%;
+
+}
+
+.adviseBtn button {
+  padding: 15px;
+  background-color: gray;
+  color: white;
+  border: none;
+  margin: 2px;
+
+}
+
+.showFavorite {
+  margin: 100px 350px 20px;
+}
+
+.showFavorite {
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 30px;
+}
+.inputValue{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+.ButtonAdd{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 30px;
+}
+.ButtonAdd p{
+  margin-left: 10px;
+  box-shadow: 1px 1px 3px 1px wheat;
+  padding: 4px;
 }

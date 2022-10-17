@@ -35,6 +35,21 @@ export default function Home() {
               <h2>Due report &rarr;</h2>
             </a>
           </Link>
+          <Link href={"/addmissionPage"}>
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2> Addmission &rarr;</h2>
+            </a>
+          </Link>
+          <Link href={"/page-expense-invoice"}>
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Dooctor note &rarr;</h2>
+            </a>
+          </Link>
+          <Link href={"/page-expense-invoice"}>
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Advise &rarr;</h2>
+            </a>
+          </Link>
           <Link href={"/page-expense-invoice"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Expense &rarr;</h2>
