@@ -26,13 +26,6 @@ a {
   }
 }
 
-
-
-
-
-
-
-
 .Addmision-Info {
   display: grid;
   margin-top: 10px;
@@ -135,24 +128,24 @@ a {
 .inFild {
   margin-top: 30px;
   width: 100%;
- background-color: whitesmoke;
- position: sticky;
+  background-color: whitesmoke;
+  position: sticky;
 
 }
 
 .adviseBtn {
-  display: flex;
-  margin-left: 70%;
-
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+  margin-left: 60%;
+ 
 }
 
-.adviseBtn button {
-  padding: 15px;
-  background-color: gray;
-  color: white;
-  border: none;
-  margin: 2px;
+.adviseBtn Button {
+  box-shadow: 1px 1px 3px 1px rgb(228, 223, 223);
+}
+.duration{
 
+  margin-left: 6px;
 }
 
 .showFavorite {
@@ -163,20 +156,94 @@ a {
   box-shadow: 1px 1px 1px 1px gray;
   padding: 30px;
 }
-.inputValue{
+
+.inputValue {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+ 
 
 }
-.ButtonAdd{
+.inputShow{
+  margin-bottom: 30px;
+}
+
+.ButtonAdd {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-left: 30px;
 }
-.ButtonAdd p{
+
+.ButtonAdd p {
   margin-left: 10px;
   box-shadow: 1px 1px 3px 1px wheat;
   padding: 4px;
+}
+
+.switchIcon {
+ display: flex;
+ align-items: center;
+ 
+}
+.switchIcon p{
+  padding: 0%;
+  margin: 0%;
+}
+.prescriptionCheck{
+  display: flex;
+}
+.rootDuration{
+  display: flex;
+}
+.remarkBtn{
+ 
+ margin-left: 80%;
+}
+.remarkBtn Button{
+  box-shadow: 1px 1px 3px 1px rgb(228, 223, 223);
+}
+.preContainer{
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .adviseBtn {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 0%;
+   
+  }
+  .operationName{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .patientInfo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .OperationTime {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .babyInfo {
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .doctorSign {
+    display: grid;
+    margin-left: 10%;
+  }
+  .mainScore {
+    display: grid;
+    grid-template-columns: repeat(1,  1fr);
+  
+  }
+  .parentsSign {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
