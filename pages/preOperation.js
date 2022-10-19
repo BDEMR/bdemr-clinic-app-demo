@@ -5,16 +5,21 @@ import Switch from '@mui/material/Switch';
 import Checkbox from '@mui/material/Checkbox';
 
 
-function Advise() {
+export default function PreOperation() {
   const [name, setName] = useState("")
   const [allData, setAllData] = useState([])
   const [open, setOpen] = React.useState(false);
+  const [medicine, setMedicine] = useState("");
+  const [does, setDose] = useState("");
+  const [duration, setDuration] = useState("");
+  const [remark, setRemark] = useState("");
+
 
   const handleClose = () => {
     setOpen(false);
   };
 
-  const showList=()=>{
+  const showList = () => {
     setOpen(true)
   }
   const handleAdd = () => {
@@ -75,11 +80,32 @@ function Advise() {
     localStorage.setItem('list', listStringfy)
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    const PostOperation = { medicine, does, remark, duration, name };
+
+    fetch('http://localhost:5000/user', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(PostOperation)
+    })
+
+      .then(res => res.json())
+      .then(data=>{
+        console.log('succes',data);
+      })
+  }
+
+
   return (
     <div className="preContainer">
 
       <div>
         <p>Prescription</p>
+
         <div >
           <div className="switchIcon" >
             <p><Switch /></p><p>Show Contraindicated List</p>
@@ -89,21 +115,21 @@ function Advise() {
           </div>
           <FormControl fullWidth sx={{ m: 1 }} variant="filled">
             <InputLabel htmlFor="filled-adornment-amount"> Enter medicine</InputLabel>
-            <FilledInput
+            <FilledInput onChange={(e) => setMedicine(e.target.value)}
               startAdornment={<InputAdornment position="start"></InputAdornment>}
             />
           </FormControl>
           <FormControl fullWidth sx={{ m: 1 }} variant="filled">
-            <InputLabel htmlFor="filled-adornment-amount"> Dose</InputLabel>
-            <FilledInput
+            <InputLabel name="does" htmlFor="filled-adornment-amount"> Dose</InputLabel>
+            <FilledInput onChange={(e) => setDose(e.target.value)}
               startAdornment={<InputAdornment position="start"></InputAdornment>}
             />
           </FormControl>
           <div className="rootDuration">
             <div className="duration">
               <FormControl variant="filled">
-                <InputLabel htmlFor="filled-adornment-amount"> Duration</InputLabel>
-                <FilledInput
+                <InputLabel name="duration" htmlFor="filled-adornment-amount"> Duration</InputLabel>
+                <FilledInput onChange={(e) => setDuration(e.target.value)}
                   startAdornment={<InputAdornment position="start"></InputAdornment>}
                 />
               </FormControl>
@@ -116,64 +142,68 @@ function Advise() {
 
 
           <FormControl fullWidth sx={{ p: 1 }} variant="filled">
-            <InputLabel htmlFor="filled-adornment-amount"> Remarks</InputLabel>
+            <InputLabel name="remark" htmlFor="filled-adornment-amount"> Remarks</InputLabel>
             <FilledInput
-              sx={{ p: 3 }}
+              sx={{ p: 3 }} onChange={(e) => setRemark(e.target.value)}
               startAdornment={<InputAdornment position="start"></InputAdornment>}
             />
           </FormControl>
         </div>
+
         <div className="remarkBtn">
-          <Button>Add</Button>
+
+          <Button onClick={(e) => handleSubmit(e)}>  Add</Button>
           <Button> clear</Button>
         </div>
+
+
       </div>
 
       <div>
         <p> <input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
         <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
         <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
-      <div>
-      
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle id="alert-dialog-title">    
-        </DialogTitle>
-        <Grid >
-            <p> <input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
-            <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
-            <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
-            {
-              allData.map((singleData, index) =>
-                <>
-                  <Grid   sx={{ display: 'flex'  ,	alignItems:'center',  ms:1, p:0 , m:0,  }} >
+        <div>
 
-                    <input type="checkbox" name="" id="" onChange={handleCheck} />
-                    <p key={'1'}>{singleData}</p>
-                    <DeleteIcon onClick={() => handleDElete(index)} />
-                  </Grid>
-                </>
-              )
-            }    
-          </Grid> 
-        <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose} autoFocus>Add </Button>
-        </DialogActions>
-      </Dialog>
-    </div>
- </div>
+          <Dialog
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+          >
+            <DialogTitle id="alert-dialog-title">
+            </DialogTitle>
+            <Grid >
+              <p> <input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
+              <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
+              <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
+              {
+                allData.map((singleData, index) =>
+                  <>
+                    <Grid sx={{ display: 'flex', alignItems: 'center', ms: 1, p: 0, m: 0, }} >
+
+                      <input type="checkbox" name="" id="" onChange={handleCheck} />
+                      <p key={index}>{singleData}</p>
+                      <DeleteIcon onClick={() => handleDElete(index)} />
+                    </Grid>
+                  </>
+                )
+              }
+            </Grid>
+            <DialogActions>
+              <Button onClick={handleClose}>Cancel</Button>
+              <Button onClick={handleClose} autoFocus>Add </Button>
+            </DialogActions>
+          </Dialog>
+        </div>
+      </div>
 
       <TextField
         id="standard-textarea" label="advise noted" placeholder="Note/Advise" multiline variant="standard" className="inFild" onChange={(e) => setName(e.target.value)} />
       <div className="adviseBtn ">
         <Button onClick={handleAdd}>Add</Button>
         <Button onClick={showList} >Favorite list</Button>
-        <Button  onClick={addLocalStorage} >  Add as a Fovarite</Button>
+        <Button onClick={addLocalStorage} >  Add as a Fovarite</Button>
 
       </div>
       <div className="inputShow">
@@ -184,7 +214,7 @@ function Advise() {
             <>
               <div className="inputValue">
                 <input type="checkbox" name="" id="" onChange={handleCheck} />
-                <p key={'1'}>{singleData}</p>
+                <p key={index}>{singleData}</p>
                 <DeleteIcon onClick={() => handleDElete(index)} />
               </div>
             </>
@@ -194,4 +224,4 @@ function Advise() {
     </div>
   );
 }
-export default Advise; 
+ 
