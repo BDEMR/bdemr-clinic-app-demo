@@ -1,17 +1,20 @@
 import Head from "next/head";
+import { useState } from "react";
+import AccountDashBoard from "../components/AccountDashBoard";
 import Layout from "../components/Layout";
-import SellInvoice from "../components/SellInvoice";
+import styles from "../styles/Home.module.css";
 // import styles from "../styles/selectorganization.module.css";
 
 export default function home() {
+
   return (
     <Layout>
       <Head>
-        <title>Sell Invoice</title>
+
+        <title>Accounts Dashboard</title>
       </Head>
       <main className={{}}>
-        <SellInvoice styles={{}} />
-        
+        <AccountDashBoard styles={{}} />
       </main>
     </Layout>
   );

@@ -1,0 +1,308 @@
+[
+    {
+        "_id": "618a529bd3bd9a52f8ef2e63",
+        "createdDatetimeStamp": "10 May 2022 ,01:16 pm",
+        "createdByUserSerial": "cdou",
+        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+        "lastModifiedDatetimeStamp": 1636454929190,
+        "data": [
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f11",
+                "employeeId": "01",
+                "employeeName": "Amrito Kumar Sarkar",
+                "employeeMobile": "01317178969",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": "1000",
+                "salary": "100002000",
+                "paid": null,
+                "netSalary": 100001000,
+                "providentFundAmount": null
+            }
+        ],
+        "totalSalaryExpense": 100001000,
+        "collection": "bdemr--organization-salary-sheet",
+        "__meta": {
+            "clientIdentifier": "bdemr-clinic-app",
+            "clientName": "bdemr",
+            "clientVersion": "1.1.453",
+            "clientPlatform": "web"
+        }
+    },
+    {
+        "_id": "618b9d96b21043249080d452",
+        "createdDatetimeStamp": "09 Jan 2022 ,10:47 pm",
+        "createdByUserSerial": "cdou",
+        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+        "lastModifiedDatetimeStamp": 1636539757960,
+        "data": [
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f11",
+                "employeeId": "56787",
+                "employeeName": "Rahat",
+                "employeeMobile": "23456",
+                "designationId": "61347cab1ffc0e590f571ce7",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": 0,
+                "salary": 678900,
+                "paid": null,
+                "netSalary": 678900,
+                "providentFundAmount": null
+            }
+        ],
+        "totalSalaryExpense": 678900,
+        "collection": "bdemr--organization-salary-sheet",
+        "__meta": {
+            "clientIdentifier": "bdemr-pharmacy-app",
+            "clientName": "bdemr",
+            "clientVersion": "1.0.0",
+            "clientPlatform": "web"
+        }
+    },
+    {
+        "_id": "618cfe270ed8700b649c2764",
+        "createdDatetimeStamp": "10 Jan 2022 ,12:47 pm",
+        "createdByUserSerial": "cdou",
+        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+        "lastModifiedDatetimeStamp": 1636629936606,
+        "data": [
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f11",
+                "employeeId": "2345",
+                "employeeName": "asdasd",
+                "employeeMobile": "2342",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": "4000",
+                "salary": 35534,
+                "paid": null,
+                "netSalary": 31534,
+                "providentFundAmount": null
+            },
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f12",
+                "employeeId": "3456",
+                "employeeName": "Rahat Saqib",
+                "employeeMobile": "01622160714",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": 0,
+                "salary": 4555,
+                "paid": null,
+                "netSalary": 4555,
+                "providentFundAmount": null
+            },
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f13",
+                "employeeId": "1233",
+                "employeeName": "Rahat Saqib",
+                "employeeMobile": "01622160714",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": 0,
+                "salary": 6777,
+                "paid": null,
+                "netSalary": 6777,
+                "providentFundAmount": null
+            }
+        ],
+        "totalSalaryExpense": 42866,
+        "collection": "bdemr--organization-salary-sheet",
+        "__meta": {
+            "clientIdentifier": "bdemr-clinic-app",
+            "clientName": "bdemr",
+            "clientVersion": "1.1.456",
+            "clientPlatform": "web"
+        }
+    },
+    {
+        "_id": "61dbd716e96003524d85e342",
+        "createdDatetimeStamp": "11 Nov 2021 ,05:25 pm",
+        "createdByUserSerial": "cdou",
+        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+        "lastModifiedDatetimeStamp": 1641797241424,
+        "data": [
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f11",
+                "employeeId": "2345",
+                "employeeName": "asdasd",
+                "employeeMobile": "2342",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": "2000",
+                "salary": 35534,
+                "paid": null,
+                "netSalary": 33534,
+                "providentFundAmount": null
+            },
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f12",
+                "employeeId": "3456",
+                "employeeName": "Rahat Saqib",
+                "employeeMobile": "01622160714",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": 0,
+                "salary": 4555,
+                "paid": null,
+                "netSalary": 4555,
+                "providentFundAmount": null
+            },
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f13",
+                "employeeId": "1233",
+                "employeeName": "Rahat Saqib",
+                "employeeMobile": "01622160714",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": 0,
+                "salary": 6777,
+                "paid": null,
+                "netSalary": 6777,
+                "providentFundAmount": null
+            },
+            {
+                "employeeSerial": "1CEmployeeByHR5e3119c4e25dc07ca96ae0f10",
+                "employeeId": "02",
+                "employeeName": "aMRITGJNEFU",
+                "employeeMobile": "HUFGKFDJH",
+                "designationId": "61011e195c325f6905a5c768",
+                "departmentId": "61011df55c325f6905a5c767",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceTaken": 0,
+                "salary": 20000,
+                "paid": null,
+                "netSalary": 20000,
+                "providentFundAmount": null
+            }
+        ],
+        "totalSalaryExpense": 64866,
+        "collection": "bdemr--organization-salary-sheet",
+        "__meta": {
+            "clientIdentifier": "bdemr-accounts-app",
+            "clientName": "bdemr",
+            "clientVersion": "1.1.475",
+            "clientPlatform": "web"
+        }
+    },
+    {
+        "_id": "627a1169ddbed84c0698c8ab",
+        "createdDatetimeStamp": "10 Nov 2021 ,04:22 pm",
+        "createdByUserSerial": "cdou",
+        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+        "lastModifiedDatetimeStamp": 1652167004462,
+        "data": [
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f11",
+                "employeeId": "2",
+                "employeeName": "Mamun",
+                "employeeMobile": "01624216001",
+                "designationId": "627a00ae71853f4666bc9d20",
+                "departmentId": "627a008e71853f4666bc9d1f",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceDeduction": 0,
+                "salaryUnitPrice": 50000,
+                "dayCount": 30,
+                "overtimeUnitPrice": "1000",
+                "festivalBonusUnitPrice": "2",
+                "houseRent": 0,
+                "conveyance": 0,
+                "medicalAllowance": "10000",
+                "education": 0,
+                "lfc": 0,
+                "taxDeduction": 0,
+                "insurance": 0,
+                "providentFund": 0,
+                "gratuityFund": 0,
+                "paid": 60000,
+                "grossSalary": 60000,
+                "totalDeductibles": 0,
+                "netSalary": 60000,
+                "providentFundAmount": 0
+            }
+        ],
+        "totalSalaryExpense": 60000,
+        "collection": "bdemr--organization-salary-sheet",
+        "__meta": {
+            "clientIdentifier": "bdemr-clinic-app",
+            "clientName": "bdemr",
+            "clientVersion": "1.1.495",
+            "clientPlatform": "web"
+        }
+    },
+    {
+        "_id": "6345085fe35eee065e0dcf7c",
+        "createdDatetimeStamp": "09 Nov 2021 ,04:46 pm",
+        "createdByUserSerial": "cdou",
+        "organizationId": "5e3119c4e25dc07ca96ae0f1",
+        "lastModifiedDatetimeStamp": 1665468476078,
+        "data": [
+            {
+                "employeeSerial": "1CEmployee5e3119c4e25dc07ca96ae0f11",
+                "employeeId": "213",
+                "employeeName": "Zim",
+                "employeeMobile": "0145654565",
+                "designationId": "62862643f50f2625395331ce",
+                "departmentId": "628625aaf50f2625395331cc",
+                "salaryUnit": 1,
+                "dues": 0,
+                "advances": 0,
+                "advanceDeduction": 0,
+                "salaryUnitPrice": 50000,
+                "dayCount": 30,
+                "overtimeUnitPrice": "1000",
+                "festivalBonusUnitPrice": "2",
+                "houseRent": 0,
+                "conveyance": 0,
+                "medicalAllowance": "10000",
+                "education": 0,
+                "lfc": 0,
+                "taxDeduction": 0,
+                "insurance": 0,
+                "providentFund": 0,
+                "gratuityFund": 0,
+                "paid": 60000,
+                "grossSalary": 60000,
+                "totalDeductibles": 0,
+                "netSalary": 60000,
+                "providentFundAmount": 0
+            }
+        ],
+        "totalSalaryExpense": 60000,
+        "collection": "bdemr--organization-salary-sheet",
+        "__meta": {
+            "clientIdentifier": "bdemr-clinic-app",
+            "clientName": "bdemr",
+            "clientVersion": "1.1.540",
+            "clientPlatform": "web"
+        }
+    }
+]

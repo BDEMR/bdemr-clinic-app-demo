@@ -75,6 +75,80 @@ margin-right: 5px;
 
 
 
+/* account salary maneger */
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+}
+.tableContainer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 10px 20px 20px 10px;
+ 
+}
+
+
+.date{
+  font-size: larger;
+  background-color: whitesmoke;
+  border: none;
+  
+}
+.startDate{
+  margin-top: 5px;
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  width: fit-content;
+  padding: 5px 80px 5px 30px;
+  border-radius: 5px;
+}
+.popUpDate{
+  position: absolute;
+  margin-left: 40%;
+  background-color: whitesmoke;
+  width: fit-content;
+  padding: 20px 50px 20px 50px;
+  box-shadow: 1px 1px 9px 4px lightgray;
+}
+.cancel{
+  border: none;
+  color: rgb(55, 172, 137);
+  font-weight: 600;
+  font-size: 15px;
+  background-color: whitesmoke;
+}
+.buttonField{
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  gap: 10px;
+}
+.filter{
+  border: none;
+  background-color: rgb(55, 172, 137);
+  color: whitesmoke;
+  padding: 15px 15px 15px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+/* end */
+
+
 
 .container {
   padding: 0 2rem;
