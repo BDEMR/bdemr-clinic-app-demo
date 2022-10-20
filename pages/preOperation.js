@@ -1,18 +1,18 @@
 import { Button, Dialog, DialogActions, DialogTitle, FilledInput, FormControl, Grid, InputAdornment, InputLabel, TextField } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
 import Switch from '@mui/material/Switch';
 import Checkbox from '@mui/material/Checkbox';
-
-
-export default function PreOperation() {
-  const [name, setName] = useState("")
+ 
+function Advise() {
+  const [note, setNote] = useState("")
   const [allData, setAllData] = useState([])
   const [open, setOpen] = React.useState(false);
   const [medicine, setMedicine] = useState("");
   const [does, setDose] = useState("");
   const [duration, setDuration] = useState("");
   const [remark, setRemark] = useState("");
+  const [Advise, setAdvise] = useState([])
 
 
   const handleClose = () => {
@@ -22,24 +22,19 @@ export default function PreOperation() {
   const showList = () => {
     setOpen(true)
   }
-  const handleAdd = () => {
-    const note = document.getElementById('standard-textarea');
-    if (name.length !== 0) {
-      setAllData(newData => [...newData, name])
 
+  const handleDEleted = (index) => {
+      allData.splice(index, 1)
+      setAllData([...allData])
     }
-    note.value = '';
+    const handleAdd = () => {
+      const notes = document.getElementById('standard-textarea');
+      if (note.length !== 0) {
+        setAllData(newData => [...newData, note])
+      }
+      notes.value = '';
+    }
 
-  }
-
-  const handleDElete = (index) => {
-    allData.splice(index, 1)
-    setAllData([...allData])
-  }
-
-  const handleShow = () => {
-    setShowList(true)
-  }
   const [optionInfo, setOptionInfo] = useState([]);
   const handleCheck = (event) => {
     const { value, checked } = event.target;
@@ -51,61 +46,80 @@ export default function PreOperation() {
     }
   }
 
-  const addLocalStorage = () => {
-    const note = document.getElementById('standard-textarea');
-    const names = note.value;
-    if (!names) {
-      return;
-    }
-    addListTodisplay(names);
-    note.value = ""
-  }
 
-  const getList = () => {
-    const list = localStorage.getItem('list');
-    let listObj;
-    if (list) {
-      listObj = JSON.parse(list);
-    }
-    else {
-      listObj = {};
-    }
-    return listObj;
-  }
-
-  const addListTodisplay = names => {
-    const list = getList();
-    list[names] = 1;
-    const listStringfy = JSON.stringify(list);
-    localStorage.setItem('list', listStringfy)
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-
-    const PostOperation = { medicine, does, remark, duration, name };
-
-    fetch('http://localhost:5000/user', {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const PreData = { remark, does, duration, medicine, allData };
+    const url = `http://localhost:5000/operationData`;
+    fetch(url, {
       method: 'POST',
       headers: {
-        'content-type': 'application/json'
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
-      body: JSON.stringify(PostOperation)
+      body: JSON.stringify(PreData)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log('as', data);
+      alert('Added your pre operation medicine');
+
+    })
+
+  }
+
+
+  const submitAdviseNote = (event) => {
+    event.preventDefault();
+    const PreData = { note };
+    const url = `http://localhost:5000/operationNote`;
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(PreData)
     })
 
       .then(res => res.json())
-      .then(data=>{
-        console.log('succes',data);
+      .then(data => {
+        console.log('as', data);
+        alert('sent data');
+
+      })
+  }
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/operationNote`)
+      .then(res => res.json())
+      .then(data => setAdvise(data));
+
+  }, [])
+
+
+  const handleDElete = (id) => {
+    const url = `http://localhost:5000/operation/${id}`;
+    console.log(url);
+    fetch(url, {
+      method: 'DELETE'
+    })
+      .then(res => res.json())
+      .then(data => {
+        if(data.deletedCount > 0){
+          console.log('deleted');
+          const remaining = Advise.filter(PreData => PreData._id !== id);
+           setAdvise(remaining);
+      }
       })
   }
 
 
+
   return (
     <div className="preContainer">
-
       <div>
-        <p>Prescription</p>
-
+        <p>Prescription for pre operation</p>
         <div >
           <div className="switchIcon" >
             <p><Switch /></p><p>Show Contraindicated List</p>
@@ -151,8 +165,9 @@ export default function PreOperation() {
         </div>
 
         <div className="remarkBtn">
-
-          <Button onClick={(e) => handleSubmit(e)}>  Add</Button>
+          {/* 
+          <Button onClick={(e) => handleSubmit(e)}>  Add</Button> */}
+          <Button onClick={handleSubmit}>  Add</Button>
           <Button> clear</Button>
         </div>
 
@@ -174,17 +189,15 @@ export default function PreOperation() {
             <DialogTitle id="alert-dialog-title">
             </DialogTitle>
             <Grid >
-              <p> <input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
-              <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
-              <p><input type="checkbox" name="" id="" onChange={handleCheck} />No sigrat smoking for your health </p>
-              {
-                allData.map((singleData, index) =>
-                  <>
-                    <Grid sx={{ display: 'flex', alignItems: 'center', ms: 1, p: 0, m: 0, }} >
 
-                      <input type="checkbox" name="" id="" onChange={handleCheck} />
-                      <p key={index}>{singleData}</p>
-                      <DeleteIcon onClick={() => handleDElete(index)} />
+              {
+                Advise.map((singleData) =>
+                  <>
+                    <Grid key={singleData._id} sx={{ display: 'flex', alignItems: 'center', ms: 1, p: 0, m: 0, }} >
+
+                      <input type="checkbox" id="" onChange={handleCheck} />
+                      <p key={singleData._id}>{singleData.note}</p>
+                      <DeleteIcon onClick={() => handleDElete(singleData._id)} />
                     </Grid>
                   </>
                 )
@@ -199,11 +212,11 @@ export default function PreOperation() {
       </div>
 
       <TextField
-        id="standard-textarea" label="advise noted" placeholder="Note/Advise" multiline variant="standard" className="inFild" onChange={(e) => setName(e.target.value)} />
+        id="standard-textarea" label="advise noted" placeholder="Note/Advise" multiline variant="standard" className="inFild" onChange={(e) => setNote(e.target.value)} />
       <div className="adviseBtn ">
         <Button onClick={handleAdd}>Add</Button>
         <Button onClick={showList} >Favorite list</Button>
-        <Button onClick={addLocalStorage} >  Add as a Fovarite</Button>
+        <Button onClick={submitAdviseNote} >  Add as a Fovarite</Button>
 
       </div>
       <div className="inputShow">
@@ -215,7 +228,7 @@ export default function PreOperation() {
               <div className="inputValue">
                 <input type="checkbox" name="" id="" onChange={handleCheck} />
                 <p key={index}>{singleData}</p>
-                <DeleteIcon onClick={() => handleDElete(index)} />
+                <DeleteIcon onClick={() => handleDEleted(index)} />
               </div>
             </>
           )
@@ -224,4 +237,4 @@ export default function PreOperation() {
     </div>
   );
 }
- 
+export default Advise; 

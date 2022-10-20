@@ -39,9 +39,9 @@ export default function PostOperation() {
     setAllData([...allData])
   }
 
-  const handleShow = () => {
+/*   const handleShow = () => {
     setShowList(true)
-  }
+  } */
   const [optionInfo, setOptionInfo] = useState([]);
   const handleCheck = (event) => {
     const { value, checked } = event.target;
