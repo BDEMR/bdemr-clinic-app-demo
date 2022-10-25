@@ -32,21 +32,21 @@ export default function Home() {
               <h2>Accounts &rarr;</h2>
             </a>
           </Link>
-          <Link href={"/page-sell-invoice"}>
+          {/* <Link href={"/page-sell-invoice"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Sell &rarr;</h2>
             </a>
-          </Link>
-          <Link href={"/object"}>
+          </Link> */}
+          <Link href={"/page-expense-invoice"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Expense &rarr;</h2>
             </a>
           </Link>
-          <Link href={""}>
+          {/* <Link href={""}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Account Dashboard &rarr;</h2>
             </a>
-          </Link>
+          </Link> */}
           <Link href={"/catagory"}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Category &rarr;</h2>
