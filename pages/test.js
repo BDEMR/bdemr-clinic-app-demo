@@ -1,5 +1,5 @@
 
-import Test from "../components/Test";
+import SellInvoice from "../components/SellInvoice";
 
 
 export default function HOME() {
@@ -8,7 +8,7 @@ export default function HOME() {
     return (
         <div>
             <div>
-            <Test styles={{}} />
+            <SellInvoice styles={{}} />
             </div>
             
             

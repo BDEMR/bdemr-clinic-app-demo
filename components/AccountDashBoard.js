@@ -6,11 +6,12 @@ import salaryManager from '../salaryManager'
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from "../styles/Home.module.css";
+import ViewSalarySheet from './ViewSalarySheet';
 
 
 
 export default function HOME() {
-  const [popUp, setPopUp] = useState(false)
+
   const [start, setStart] = useState('')
   const [end, setEnd] = useState('')
   const [field, setField] = useState('')
@@ -97,11 +98,12 @@ export default function HOME() {
           salaryManager.map(salar => <div key={salar._id}>
 
             <div className={styles.tableContainer}>
-              <div>{salar.createdDatetimeStamp
-              }</div>
+              <div>{ salar.createdDatetimeStamp}</div>
+              
 
               <div >{salar.totalSalaryExpense}</div>
-              <div ><ContentCopyIcon /> <VisibilityIcon /></div>
+              
+              <div ><ContentCopyIcon onClick={() => route.push("/accounts-salary-creator")}/> <VisibilityIcon onClick={() => route.push("/view-salary-sheet")}/></div>
 
             </div>
 
@@ -117,19 +119,7 @@ export default function HOME() {
       </section>
       <section>
         {/* date section --------------------------------- */}
-        {
-          // popUp ? <div className={styles.popUpDate}>
-          //   <h3>Filter By</h3>
-          //   
-          //   <div className={styles.buttonField}>
-          //     <button onClick={handleCancel} className={styles.cancel}>CANCEL</button>
-          //     <Button onClick={handleFilter} disabled={!(start && end)} variant="contained" color="success">FILTER</Button>
-          //   </div>
-
-          // </div> : null
-        }
-
-          
+        
       <Dialog
         open={open}
         onClose={handleClose}
