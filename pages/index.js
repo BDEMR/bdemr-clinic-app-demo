@@ -55,6 +55,11 @@ export default function Home() {
               <h2>Post Operation &rarr;</h2>
             </a>
           </Link>
+          <Link href="madicationPage">
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Madication chart &rarr;</h2>
+            </a>
+          </Link>
         </div>
       </main>
 
