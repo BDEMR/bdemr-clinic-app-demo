@@ -5,7 +5,8 @@
 }
 
 .input_container {
-  margin: 10px;
+  margin: 30px;
+  padding: 30px;
 }
 
 .vendorText {
@@ -107,6 +108,285 @@
   font-weight: bold;
   color: rgb(90, 214, 90);
 }
+.formSubmit{
+  color: #fafafa;
+ 
+  background-color: rgba(4, 134, 117, 0.815);
+  border: none;
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.formSubmitDiv{
+  display: flex;
+  justify-content: end;
+}
+.qtyInputFiled{
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+}
+.qtyBar{
+  display: flex;
+  margin: 0px 40% 0px -40%
+}
+.positiveButton{
+  border: none;
+  font-size: large;
+  margin: 0px 3px 0px 3px;
+}
+
+.Submit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formPRINT{
+  background-color: rgb(223, 178, 64);
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+
+}
+
+
+.catagoryContainer{
+  margin-top: 100px;
+  position: relative;
+}
+.catagoryfield{
+  width: 40%;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  
+}
+.catagoryHeader{
+  padding: 10px 7px 15px 10px;
+  background-color: rgb(55, 172, 137);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.catagoryButtonDiv{
+  display: flex;
+  justify-content: end;
+  
+}
+.catagoryButton{
+  background-color: rgb(55, 172, 137);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-right: 22px;
+
+}
+.catagoryTable{
+  padding: 15px;
+  
+
+}
+.catagoryTableHeader{
+
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: 10px 10px 0px 10px;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.catagoryTableHeaderName{
+  padding-left: 10px;
+  border-right: 1px solid black;
+  width: 70%;
+  
+}
+.catagoryTableHeaderAction{
+  padding-left: 10px;
+  width: 35%;
+  
+}
+.catagoryTableRow{
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0px 10px 0px 10px;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 3px;
+
+}
+.catagoryDelete{
+  margin-top: 9px;
+  padding: 10px;
+  background-color: rgb(216, 81, 81);
+  border: none;
+  border-radius: 3px;
+  color: white;
+ 
+}
+.popUpField{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 50px;
+  display: block;
+  background-color: whitesmoke;
+  width: fit-content;
+
+  padding: 10px;
+  box-shadow: 2px 2px 5px 2px gray;
+
+}
+.popUpSubmit{
+  margin:3px 5px 5px 0px ;
+  background-color: rgb(55, 172, 137);
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+}
+.popUpCancle{
+  margin:3px 5px 5px 0px ;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  color: rgb(55, 172, 137);
+  font-weight: 600;
+}
+
+
+
+
+
+
+.checkboxContainer{
+  margin: 10px 10px 10px 0px;
+  border: 1px solid lightgray;
+  padding: 25px 10px 25px 10px;
+  background-color: whitesmoke;
+}
+.searchField{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 5px;
+}
+.showContainer{
+  position: relative;
+  background-color: whitesmoke;
+  border-top: 1px solid lightgray;
+  margin-right: 10px;
+}
+.showFiled{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  
+  align-items: center;
+  gap: 30px;
+  margin-left: 10px;
+ 
+  
+}
+.show{
+ font-weight: 400;
+}
+.showFiled input{
+  font-size: large;
+  width: 100%;
+  /* gap: 10%; */
+  background-color: rgba(164, 153, 153, 0.315);
+  border-radius: 3px;
+  border: none;
+  padding: 2px 2px 2px 6px;
+}
+.date{
+  font-size: larger;
+  background-color: whitesmoke;
+  border: none;
+  
+}
+.startDate{
+  margin-top: 5px;
+  width: fit-content;
+  padding: 5px 80px 5px 30px;
+  border-radius: 5px;
+}
+.popUpContainer{
+  position: absolute;
+  margin-left: 40%;
+  background-color: whitesmoke;
+  width: fit-content;
+  padding: 20px 50px 20px 50px;
+  box-shadow: 1px 1px 9px 4px lightgray;
+}
+.cancel{
+  border: none;
+  color: rgb(55, 172, 137);
+  font-weight: 600;
+  font-size: 15px;
+  background-color: whitesmoke;
+}
+.buttonField{
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  gap: 10px;
+}
+.filter{
+
+  border: none;
+  background-color: rgb(55, 172, 137);
+  color: whitesmoke;
+  padding: 15px 15px 15px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.X{
+  border: none;
+  font-weight: 700;
+  font-size: large;
+
+}
+.X:hover{
+  color: rgba(190, 44, 44, 0.731);
+  /* color: rgba(224, 160, 50, 0.731); */
+}
+.showCategory{
+  font-weight: 400;
+
+}
+.showCH{
+  margin-left: 50px;
+  font-weight: 400;
+}
+.showN{
+  background-color: whitesmoke !important;
+
+}
+
+.popUpError{
+  position: absolute;
+  background-color: whitesmoke;
+  width: fit-content;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px lightgray;
+}
+.tablePrint{
+  border-bottom: 2px solid black;
+  /* margin-right: 10%; */
+  
+}
+
 
 
 

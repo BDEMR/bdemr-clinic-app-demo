@@ -371,6 +371,18 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@mantine/dates@^5.6.2":
+  version "5.6.2"
+  resolved "https://registry.yarnpkg.com/@mantine/dates/-/dates-5.6.2.tgz#ad5a90450d1a3355439688e34d2b4a57042f79b5"
+  integrity sha512-ODc5VDIF/CzOxkC5lOCKkAY+Jk6fNk1ILymDL/eZ95juHsrqviG4kvQUTUehHXI2ikA/tGIfN3AhZLU9RWHipA==
+  dependencies:
+    "@mantine/utils" "5.6.2"
+
+"@mantine/utils@5.6.2":
+  version "5.6.2"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.6.2.tgz#72ffa0e6c8a0c69554aa4c43b6f52663f87d785f"
+  integrity sha512-oWBVtewwIiqqKMCw8JahrHsDb1h68Eq878RWhnH+wOC1FOz1oV0ZXz0+5/gMUFZGss0duWEZXTVXafkBnD2HZA==
+
 "@mui/base@5.0.0-alpha.100":
   version "5.0.0-alpha.100"
   resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.100.tgz#5587c98fb8c6fdf9138b92c519fe3fd79682f7ac"
@@ -969,6 +981,11 @@ damerau-levenshtein@^1.0.8:
   version "1.0.8"
   resolved "https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz"
   integrity sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==
+
+dayjs@^1.11.6:
+  version "1.11.6"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.6.tgz#2e79a226314ec3ec904e3ee1dd5a4f5e5b1c7afb"
+  integrity sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==
 
 debug@^2.6.9:
   version "2.6.9"
@@ -2093,6 +2110,13 @@ react-is@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-to-print@^2.14.7:
+  version "2.14.7"
+  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.14.7.tgz#d288de0e573e6e63e203a48d4bad7a1759d18688"
+  integrity sha512-lWVVAs9Co25uyE0toxcWeFsmaZObwUozXrJD9WMpDPclpBgk+WIzxlt3Q3omL/BCBG/cpf0XNvhayUWa+99YGw==
+  dependencies:
+    prop-types "^15.8.1"
 
 react-transition-group@^4.4.5:
   version "4.4.5"
