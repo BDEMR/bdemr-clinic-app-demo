@@ -30,14 +30,17 @@ export default function HOME() {
   const handleClose = () => {
     setField(start)
     setOpen(false);
-    const filterData = salaryManager.filter(da => da.createdDatetimeStamp === '10 Jan 2022 ,12:47 pm');
-    setItems(filterData);
   };
 
 
   console.log(start)
+  console.log("mill",new Date(start).getTime())
   console.log(end)
-  console.log(items)
+  console.log("mill",new Date(end).getTime())
+
+
+
+
 
 
 
@@ -122,7 +125,7 @@ const [salaryManager,setApi] = useState([])
           <div>
 
             <Button onClick={handleClickOpen} variant="contained" sx={{ backgroundColor: 'whitesmoke', color: 'black' }}>
-              {field ? <div>{start + '   ' + end}</div> : "Click to filter my date"}
+              {field ? <div>{new Date(start).toLocaleDateString() + '   ' + new Date(end).toLocaleDateString()}</div> : "Click to filter my date"}
             </Button>
             <button onClick={handelNewTime}>x</button>
           </div>
@@ -179,7 +182,7 @@ const [salaryManager,setApi] = useState([])
             Filter By
           </DialogTitle>
           <DialogContent>
-            <DialogContentText id="alert-dialog-description">
+          <DialogContentText id="alert-dialog-description">
               {/* <div className={styles.startDate}>
               <label >Choose Start Date</label> <br></br>
               <input onChange={handleStartDate} className={styles.date} type={'date'}></input>
@@ -188,9 +191,13 @@ const [salaryManager,setApi] = useState([])
               <label >Choose End Date</label> <br></br>
               <input onChange={handleEndDate} className={styles.date} type={'date'}></input>
             </div> */}
-
-              <DatePicker placeholder="Choose Start Date" value={start} onChange={setStart} />
+            <div className={styles.calender}>
+            <DatePicker placeholder="Choose Start Date" value={start} onChange={setStart} />
               <DatePicker placeholder="Choose End Date" value={end} onChange={setEnd} />
+            </div>
+
+              
+             
 
 
             </DialogContentText>
