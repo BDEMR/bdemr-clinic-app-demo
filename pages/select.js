@@ -5,11 +5,13 @@ import moment from 'moment';
 const Select = () => {
   const [start, setStart] = useState('')
   const [end, setEnd] = useState('')
-  let e = end;
-  let m = new Date(e).toGMTString()
-  //console.log(m)
-  //console.log("start",start)
-  console.log("end",new Date(m).getTime())
+  let e = Date.parse(end) ;
+  console.log(e)
+
+  // let m = new Date(e).toGMTString()
+  // //console.log(m)
+  // //console.log("start",start)
+  // console.log("end",new Date(m).getTime())
   return (
     <div>
       <h1>test</h1>

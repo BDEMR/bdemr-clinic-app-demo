@@ -1,6 +1,7 @@
 
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material'
 import { useRouter } from 'next/router';
+import * as dayjs from 'dayjs'
 import React, { useEffect, useState } from 'react'
 //import salaryManager from '../salaryManager'
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
@@ -9,6 +10,7 @@ import { DatePicker } from '@mantine/dates';
 import styles from "../styles/Home.module.css";
 import call_Api from '../pages/api/call_Api';
 import ViewSalarySheet from './ViewSalarySheet';
+import { ContactlessOutlined } from '@mui/icons-material';
 
 
 
@@ -18,10 +20,16 @@ export default function HOME() {
   const [end, setEnd] = useState('')
   const [field, setField] = useState('')
   const [items, setItems] = useState([])
+  const [salaryManager,setApi] = useState([])
+
+
+   console.log(salaryManager);
 
   const route = useRouter();
 
   const [open, setOpen] = React.useState(false);
+  const startDate= dayjs(start).format('YYYY-MM-DDTHH:mm:ss.SSS[Z]')
+ const endDate= dayjs(end).format('YYYY-MM-DDTHH:mm:ss.SSS[Z]')
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -30,6 +38,13 @@ export default function HOME() {
   const handleClose = () => {
     setField(start)
     setOpen(false);
+    _loadDataFromApi(startDate,endDate)
+    // salaryManager.slice(0,1).map((item) =>{
+    //  return setApi([item])
+       //console.log("item",salaryManager);
+   // })
+  
+
   };
 
 
@@ -68,11 +83,11 @@ export default function HOME() {
 
 // api call 
 
-const [salaryManager,setApi] = useState([])
-   console.log(salaryManager);
+ 
+
     const _loadDataFromApi = async (startDate, endDate) => {
 
-  
+     
 
         const query = {
           apiKey: "TjUyL4myCxziIBpegdz6Vw1axhtFgvDpmVvRtgOYKQxAecrdfw8an3RzgeNIL3m5dtdZbs00FuBWBgqoxps58BBFfq95TrVmylTeKLTFBC1sh15U72VgufBiRnUSBHEE"
@@ -80,11 +95,12 @@ const [salaryManager,setApi] = useState([])
           organizationId: "5e3119c4e25dc07ca96ae0f1", // may not be requires for all api call
           //   other query data :
           searchParameters: {
-            dateCreatedFrom: "2020-02-15T18:00:00.000Z",
-            dateCreatedTo: "2022-10-13T17:59:59.999Z",
+            dateCreatedFrom:startDate,//"2020-02-15T18:00:00.000Z"
+            dateCreatedTo: endDate,//"2022-10-13T17:59:59.999Z"
           },
         };
       //   setLoading(true); // loading starts
+      console.log(query)
         try {
           // call_Api is a function that takes an endpoint and query data
           const incomeListResponse = await call_Api(
@@ -117,7 +133,7 @@ const [salaryManager,setApi] = useState([])
   return (
     <div>
     <section>
-      <button onClick={_loadDataFromApi}>Test </button>
+      <button onClick={()=>_loadDataFromApi(startDate,endDate)}>Test </button>
     </section>
       <section>
 
@@ -145,6 +161,26 @@ const [salaryManager,setApi] = useState([])
 
           </div>
         </div>
+
+
+        {/* <div>
+        {
+          salaryManager.map(salar => <div key={salar._id}>
+
+            <div className={styles.tableContainer}>
+              <div>{new Date(salar.createdDatetimeStamp).toLocaleDateString()}</div>
+
+
+              <div >{salar.totalSalaryExpense}</div>
+
+              <div ><ContentCopyIcon onClick={() => route.push("/accounts-salary-creator")} /> <VisibilityIcon onClick={() => route.push("/view-salary-sheet")} /></div>
+
+            </div>
+
+          </div>)
+        }
+
+        </div> */}
 
         {
           salaryManager.map(salar => <div key={salar._id}>
