@@ -151,6 +151,30 @@
   font-weight: bold;
 
 }
+.billedField{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.itemsADD_button{
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+.startDate{
+  margin-top: 5px;
+  width: 280px;
+  height: 100px;
+  /* padding: 5px 80px 5px 30px; */
+  border-radius: 5px;
+}
+
+
+
+
+
+
 
 
 .catagoryContainer{
@@ -314,12 +338,12 @@
   border: none;
   
 }
-.startDate{
+/* .startDate{
   margin-top: 5px;
   width: fit-content;
   padding: 5px 80px 5px 30px;
   border-radius: 5px;
-}
+} */
 .popUpContainer{
   position: absolute;
   margin-left: 40%;
