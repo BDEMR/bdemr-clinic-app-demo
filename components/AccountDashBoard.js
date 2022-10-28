@@ -287,9 +287,6 @@ export default function HOME() {
 
                                         <DatePicker placeholder="End Date" label="Choose End Date" value={filledEnd} onChange={setFilledEnd} withAsterisk />
 
-
-                                       
-
                                     </div>
 
                                     <div className={styles.startDate}>
