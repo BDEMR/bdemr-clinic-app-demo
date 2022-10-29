@@ -6,6 +6,16 @@ import { useState } from 'react';
 import styles from "../styles/Home.module.css";
 import { Box, Button, FormControl, IconButton, InputLabel, MenuItem, TextField } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 
 
@@ -30,7 +40,7 @@ export default function NewExpanseItems() {
     const [address, setaAddress] = useState('');
     const [id, setId] = useState('')
     const [allTotal, setAllTotal] = useState('')
-
+    const [value, setValue] = useState(null);
 
     // const increase = (id) => {
     //     setId(id);
@@ -239,77 +249,67 @@ export default function NewExpanseItems() {
                 </section>
                 <section>
                     <h1 className={styles.vendorText}>Items</h1>
-                    <div className={styles.hr}></div>
-
-                    <div className={styles.item_first_row}>
-                        {/* first row  */}
-                        <div className={styles.first_row_under_item}>
-                            <div>  <small>Item Name</small> </div>
-                            <div> <small>Category</small></div>
-                            <div><small> Qty</small></div>
-                            <div> <small> Unit Price</small></div>
-                            
-                        </div>
-
-                        {/* second row  */}
-                        <div className={styles.second_row_under_item}>
-                            <div >
-                                <TextField onChange={handleSearchItem} variant="filled" fullWidth
-                                    // value={item.itemName}
-                                    label='Search Item'
-                                    id="fullWidth" />
-                            </div>
-                            <div>
-                                <TextField onChange={handleCategory} variant="filled" fullWidth label="Category" id="fullWidth" />
-                            </div>
-                            <div><TextField onChange={handleQty} fullWidth label="1" id="fullWidth" variant="filled" /></div>
-                            <div><TextField onChange={handleBuyingPrice} fullWidth id="fullWidth" variant="filled" /></div>
-                           
-                            <div className={styles.itemsADD_button}>
-                        <Button onClick={handleAdd} variant="contained">ADD</Button>
-                    </div>
-                        </div>
-
-                    </div>
-                    {/* <TextField variant="filled" className={styles.input_field} fullWidth label="Batch Number" id="fullWidth" />
-
-
-                    <div className={styles.date_input}><label htmlFor="Batch">Manufacture Date</label> <input type="date" name="Batch" id="Batch" /></div>
-
-
-                    <div className={styles.date_input}><label htmlFor="Expire Date">Expire Date/Valid Until</label> <input type="date" name="Expire Date" id="Expire Date" /></div>
-
-                    <div className={styles.ADD_button}>
-                        <Button onClick={handleAdd} variant="contained">ADD</Button>
-                    </div> */}
 
                 </section>
 
+                <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell> <TextField onChange={handleSearchItem} variant="filled" fullWidth
+                                    // value={item.itemName}
+                                    label='Search Item'
+                                    id="fullWidth" /></TableCell>
+                                <TableCell align="right"><TextField onChange={handleCategory} variant="filled" fullWidth label="Category" id="fullWidth" /></TableCell>
+                                <TableCell align="right"><TextField onChange={handleQty} fullWidth label="Qty" id="fullWidth" variant="filled" /></TableCell>
+                                <TableCell align="right"><TextField onChange={handleBuyingPrice} fullWidth id="fullWidth" variant="filled" label="Buying Price" /></TableCell>
+                                <TableCell align="right"><Button onClick={handleAdd} variant="contained">ADD</Button></TableCell>
+
+                            </TableRow>
+                        </TableHead>
+
+                    </Table>
+                </TableContainer>
+
+
+                <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell> Item Name</TableCell>
+                                <TableCell align="right">Category</TableCell>
+                                <TableCell align="right">Qty</TableCell>
+                                <TableCell align="right">Buying Price</TableCell>
+                                <TableCell align="right">Total</TableCell>
+                                <TableCell align="right">Action</TableCell>
+
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {items?.map((item) => (
+                                <TableRow
+                                    key={item?.serial}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <TableCell component="th" scope="row">
+                                        {item?.item_search}
+                                    </TableCell>
+                                    <TableCell align="right">{item?.category}</TableCell>
+                                    <TableCell align="right"><input onChange={handleQtyInput} type="number" name="" id="" onClick={changeQty} value={item?.quantity} /></TableCell>
+                                    <TableCell align="right">{item?.buyingPrice}</TableCell>
+                                    <TableCell align="right">{item?.buyingPrice * item?.quantity}</TableCell>
+                                    <TableCell align="right"><DeleteIcon sx={{ color: 'green' }} /></TableCell>
+                                </TableRow>
+                            ))}
+
+
+
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+
                 <section>
-                    <div className={styles.table}>
-                        <small>Item Name</small>
-                        <small>Category</small>
-                        <small>Qty</small>
-                        <small>Buying Price</small>
-                        <small>Total</small>
-                        <small>Action</small>
-                    </div>
-                    {
-                        items?.map(item => <div className={styles.table} key={item?.serial}>
-                            <small>{item?.item_search}</small>
-                            <small>{item?.category}</small>
-                            <small><input className={styles.qtyInputFiled} onChange={handleQtyInput} type="number" name="" id="" onClick={changeQty} value={item?.quantity} /></small>
 
-                            {/* <small className={styles.qtyBar}><button onClick={decrease} className={styles.positiveButton}>-</button> <input className={styles.qtyInputFiled} onChange={handleQtyInput} type="text" name="" id="" value={item?.qty} /> <button onClick={() => increase(item?.key)} className={styles.positiveButton}>+</button></small> */}
-
-                            <small>{item?.buyingPrice}</small>
-                            <small id='ta'>{item?.buyingPrice * item?.quantity} </small>
-                            <small> <DeleteIcon sx={{ color: 'green' }} /></small>
-
-
-
-                        </div>)
-                    }
 
 
                     <h3 className={styles.Gross}>Gross</h3>
@@ -365,7 +365,18 @@ export default function NewExpanseItems() {
                     </div>
                     <div className={styles.discount}>
                         <small>Next Payment Date</small>
-                        <div className={styles.date_input}><label htmlFor="Select" >Select Date</label> <input type="date" name="Select" id="Select" /></div>
+                        <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                <DatePicker
+                                    label="Basic example"
+                                    value={value}
+                                    onChange={(newValue) => {
+                                        setValue(newValue);
+                                    }}
+                                    renderInput={(params) => <TextField {...params} />}>
+
+                                </DatePicker>
+                            </LocalizationProvider>
+                        
                     </div>
                 </section>
 
