@@ -60,6 +60,11 @@ export default function Home() {
               <h2>Madication chart &rarr;</h2>
             </a>
           </Link>
+          <Link href="PatientStey">
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Patient stey &rarr;</h2>
+            </a>
+          </Link>
         </div>
       </main>
 
